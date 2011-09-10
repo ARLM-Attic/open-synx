@@ -25,14 +25,16 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.MusicDir = New System.Windows.Forms.TextBox()
+        Me.VideosDir = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.MoviesDir = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.DevDrv = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.PicturesDir = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -55,57 +57,57 @@ Partial Class Form1
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Music Directory:"
         '
-        'TextBox1
+        'MusicDir
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 238)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(405, 20)
-        Me.TextBox1.TabIndex = 2
-        Me.TextBox1.Text = "e.g. C:\Users\Example\Music"
+        Me.MusicDir.Location = New System.Drawing.Point(13, 238)
+        Me.MusicDir.Name = "MusicDir"
+        Me.MusicDir.Size = New System.Drawing.Size(405, 20)
+        Me.MusicDir.TabIndex = 2
+        Me.MusicDir.Text = "e.g. C:\Users\Example\Music"
         '
-        'TextBox2
+        'VideosDir
         '
-        Me.TextBox2.Location = New System.Drawing.Point(8, 283)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(405, 20)
-        Me.TextBox2.TabIndex = 4
-        Me.TextBox2.Text = "e.g. C:\Users\Example\Videos"
+        Me.VideosDir.Location = New System.Drawing.Point(13, 283)
+        Me.VideosDir.Name = "VideosDir"
+        Me.VideosDir.Size = New System.Drawing.Size(405, 20)
+        Me.VideosDir.TabIndex = 4
+        Me.VideosDir.Text = "e.g. C:\Users\Example\Videos"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(9, 261)
+        Me.Label2.Location = New System.Drawing.Point(13, 261)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(121, 18)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Videos Directory:"
         '
-        'TextBox3
+        'MoviesDir
         '
-        Me.TextBox3.Location = New System.Drawing.Point(4, 328)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(405, 20)
-        Me.TextBox3.TabIndex = 6
-        Me.TextBox3.Text = "e.g. C:\Users\Example\Videos\Movies"
+        Me.MoviesDir.Location = New System.Drawing.Point(13, 328)
+        Me.MoviesDir.Name = "MoviesDir"
+        Me.MoviesDir.Size = New System.Drawing.Size(405, 20)
+        Me.MoviesDir.TabIndex = 6
+        Me.MoviesDir.Text = "e.g. C:\Users\Example\Videos\Movies"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(5, 306)
+        Me.Label3.Location = New System.Drawing.Point(13, 306)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(124, 18)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Movies Directory:"
         '
-        'TextBox4
+        'DevDrv
         '
-        Me.TextBox4.Location = New System.Drawing.Point(422, 34)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(49, 20)
-        Me.TextBox4.TabIndex = 8
-        Me.TextBox4.Text = "e.g. E:\"
+        Me.DevDrv.Location = New System.Drawing.Point(422, 34)
+        Me.DevDrv.Name = "DevDrv"
+        Me.DevDrv.Size = New System.Drawing.Size(49, 20)
+        Me.DevDrv.TabIndex = 8
+        Me.DevDrv.Text = "e.g. E:\"
         '
         'Label4
         '
@@ -126,19 +128,39 @@ Partial Class Form1
         Me.Button2.Text = "About Synx"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'PicturesDir
+        '
+        Me.PicturesDir.Location = New System.Drawing.Point(13, 373)
+        Me.PicturesDir.Name = "PicturesDir"
+        Me.PicturesDir.Size = New System.Drawing.Size(405, 20)
+        Me.PicturesDir.TabIndex = 11
+        Me.PicturesDir.Text = "e.g. C:\Users\Example\Pictures"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(13, 351)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(130, 18)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Pictures Directory:"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(833, 521)
+        Me.Controls.Add(Me.PicturesDir)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.DevDrv)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.MoviesDir)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.VideosDir)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.MusicDir)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -150,13 +172,15 @@ Partial Class Form1
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents MusicDir As System.Windows.Forms.TextBox
+    Friend WithEvents VideosDir As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents MoviesDir As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents DevDrv As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents PicturesDir As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 
 End Class
