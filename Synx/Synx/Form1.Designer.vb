@@ -104,6 +104,7 @@ Partial Class Form1
         'DevDrv
         '
         Me.DevDrv.Location = New System.Drawing.Point(422, 34)
+        Me.DevDrv.MaxLength = 4
         Me.DevDrv.Name = "DevDrv"
         Me.DevDrv.Size = New System.Drawing.Size(49, 20)
         Me.DevDrv.TabIndex = 8
