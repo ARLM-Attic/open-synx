@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Synx", "Synx\Synx.vbproj", "{83CBEDAF-349C-4E47-AA73-E036D82DDEBB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs35
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Synx\\Synx.vbproj
+		SccProjectName1 = Synx
+		SccLocalPath1 = Synx
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83CBEDAF-349C-4E47-AA73-E036D82DDEBB}.Debug|x86.ActiveCfg = Debug|x86
+		{83CBEDAF-349C-4E47-AA73-E036D82DDEBB}.Debug|x86.Build.0 = Debug|x86
+		{83CBEDAF-349C-4E47-AA73-E036D82DDEBB}.Release|x86.ActiveCfg = Release|x86
+		{83CBEDAF-349C-4E47-AA73-E036D82DDEBB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
