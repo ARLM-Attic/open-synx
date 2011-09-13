@@ -35,7 +35,6 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PicturesDir = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.SuspendLayout()
         '
         'Button1
@@ -148,19 +147,11 @@ Partial Class Form1
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Pictures Directory:"
         '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 408)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(447, 23)
-        Me.ProgressBar1.TabIndex = 12
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(833, 521)
-        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.PicturesDir)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
@@ -192,6 +183,5 @@ Partial Class Form1
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents PicturesDir As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
 
 End Class
