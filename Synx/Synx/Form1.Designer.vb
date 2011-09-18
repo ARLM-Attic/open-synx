@@ -35,6 +35,10 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PicturesDir = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Username = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -147,11 +151,52 @@ Partial Class Form1
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Pictures Directory:"
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(437, 216)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(61, 18)
+        Me.Label6.TabIndex = 12
+        Me.Label6.Text = "AirSynx:"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(440, 237)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(97, 17)
+        Me.CheckBox1.TabIndex = 14
+        Me.CheckBox1.Text = "Enable AirSynx"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Username
+        '
+        Me.Username.Location = New System.Drawing.Point(440, 259)
+        Me.Username.Name = "Username"
+        Me.Username.Size = New System.Drawing.Size(170, 20)
+        Me.Username.TabIndex = 15
+        Me.Username.Text = "Dropbox Username"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(440, 295)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox2.Size = New System.Drawing.Size(170, 20)
+        Me.TextBox2.TabIndex = 16
+        Me.TextBox2.Text = "Dropbox Password"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(833, 521)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Username)
+        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PicturesDir)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
@@ -183,5 +228,9 @@ Partial Class Form1
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents PicturesDir As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents Username As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
 
 End Class
