@@ -35,10 +35,10 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PicturesDir = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Username = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.MusicCheckBox = New System.Windows.Forms.CheckBox()
+        Me.VideosCheckBox = New System.Windows.Forms.CheckBox()
+        Me.MoviesCheckBox = New System.Windows.Forms.CheckBox()
+        Me.PicturesCheckBox = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -151,52 +151,51 @@ Partial Class Form1
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Pictures Directory:"
         '
-        'Label6
+        'MusicCheckBox
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(437, 216)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 18)
-        Me.Label6.TabIndex = 12
-        Me.Label6.Text = "AirSynx:"
+        Me.MusicCheckBox.AutoSize = True
+        Me.MusicCheckBox.Location = New System.Drawing.Point(426, 240)
+        Me.MusicCheckBox.Name = "MusicCheckBox"
+        Me.MusicCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.MusicCheckBox.TabIndex = 12
+        Me.MusicCheckBox.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'VideosCheckBox
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(440, 237)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(97, 17)
-        Me.CheckBox1.TabIndex = 14
-        Me.CheckBox1.Text = "Enable AirSynx"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.VideosCheckBox.AutoSize = True
+        Me.VideosCheckBox.Location = New System.Drawing.Point(426, 286)
+        Me.VideosCheckBox.Name = "VideosCheckBox"
+        Me.VideosCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.VideosCheckBox.TabIndex = 13
+        Me.VideosCheckBox.UseVisualStyleBackColor = True
         '
-        'Username
+        'MoviesCheckBox
         '
-        Me.Username.Location = New System.Drawing.Point(440, 259)
-        Me.Username.Name = "Username"
-        Me.Username.Size = New System.Drawing.Size(170, 20)
-        Me.Username.TabIndex = 15
-        Me.Username.Text = "Dropbox Username"
+        Me.MoviesCheckBox.AutoSize = True
+        Me.MoviesCheckBox.Location = New System.Drawing.Point(426, 330)
+        Me.MoviesCheckBox.Name = "MoviesCheckBox"
+        Me.MoviesCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.MoviesCheckBox.TabIndex = 14
+        Me.MoviesCheckBox.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'PicturesCheckBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(440, 295)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(170, 20)
-        Me.TextBox2.TabIndex = 16
-        Me.TextBox2.Text = "Dropbox Password"
+        Me.PicturesCheckBox.AutoSize = True
+        Me.PicturesCheckBox.Location = New System.Drawing.Point(426, 376)
+        Me.PicturesCheckBox.Name = "PicturesCheckBox"
+        Me.PicturesCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.PicturesCheckBox.TabIndex = 15
+        Me.PicturesCheckBox.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(833, 521)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Username)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.PicturesCheckBox)
+        Me.Controls.Add(Me.MoviesCheckBox)
+        Me.Controls.Add(Me.VideosCheckBox)
+        Me.Controls.Add(Me.MusicCheckBox)
         Me.Controls.Add(Me.PicturesDir)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
@@ -228,9 +227,9 @@ Partial Class Form1
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents PicturesDir As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents Username As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents MusicCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents VideosCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents MoviesCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents PicturesCheckBox As System.Windows.Forms.CheckBox
 
 End Class

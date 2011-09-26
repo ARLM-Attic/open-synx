@@ -87,6 +87,9 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AppLimit.CloudComputing.SharpBox.Net40">
+      <HintPath>..\..\..\Downloads\SharpBox-1.1.1.486\fx40\AppLimit.CloudComputing.SharpBox.Net40.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
