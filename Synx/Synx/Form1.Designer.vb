@@ -23,7 +23,7 @@ Partial Class Home
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SynxButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MusicDir = New System.Windows.Forms.TextBox()
         Me.VideosDir = New System.Windows.Forms.TextBox()
@@ -43,24 +43,27 @@ Partial Class Home
         Me.Button4 = New System.Windows.Forms.Button()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.ClassicSynxButton = New System.Windows.Forms.Button()
+        Me.D2PCSynxButton = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'SynxButton
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 85.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(405, 197)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "SYNX!"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.SynxButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 85.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SynxButton.Location = New System.Drawing.Point(12, 12)
+        Me.SynxButton.Name = "SynxButton"
+        Me.SynxButton.Size = New System.Drawing.Size(406, 197)
+        Me.SynxButton.TabIndex = 0
+        Me.SynxButton.Text = "SYNX!"
+        Me.SynxButton.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 216)
+        Me.Label1.Location = New System.Drawing.Point(12, 241)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(116, 18)
         Me.Label1.TabIndex = 1
@@ -68,7 +71,7 @@ Partial Class Home
         '
         'MusicDir
         '
-        Me.MusicDir.Location = New System.Drawing.Point(13, 238)
+        Me.MusicDir.Location = New System.Drawing.Point(12, 263)
         Me.MusicDir.Name = "MusicDir"
         Me.MusicDir.Size = New System.Drawing.Size(405, 20)
         Me.MusicDir.TabIndex = 2
@@ -76,7 +79,7 @@ Partial Class Home
         '
         'VideosDir
         '
-        Me.VideosDir.Location = New System.Drawing.Point(13, 283)
+        Me.VideosDir.Location = New System.Drawing.Point(12, 308)
         Me.VideosDir.Name = "VideosDir"
         Me.VideosDir.Size = New System.Drawing.Size(405, 20)
         Me.VideosDir.TabIndex = 4
@@ -86,7 +89,7 @@ Partial Class Home
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(13, 261)
+        Me.Label2.Location = New System.Drawing.Point(12, 286)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(121, 18)
         Me.Label2.TabIndex = 3
@@ -94,7 +97,7 @@ Partial Class Home
         '
         'MoviesDir
         '
-        Me.MoviesDir.Location = New System.Drawing.Point(13, 328)
+        Me.MoviesDir.Location = New System.Drawing.Point(12, 353)
         Me.MoviesDir.Name = "MoviesDir"
         Me.MoviesDir.Size = New System.Drawing.Size(405, 20)
         Me.MoviesDir.TabIndex = 6
@@ -104,7 +107,7 @@ Partial Class Home
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(13, 306)
+        Me.Label3.Location = New System.Drawing.Point(12, 331)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(124, 18)
         Me.Label3.TabIndex = 5
@@ -131,7 +134,7 @@ Partial Class Home
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(422, 121)
+        Me.Button2.Location = New System.Drawing.Point(426, 224)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
@@ -140,7 +143,7 @@ Partial Class Home
         '
         'PicturesDir
         '
-        Me.PicturesDir.Location = New System.Drawing.Point(13, 373)
+        Me.PicturesDir.Location = New System.Drawing.Point(12, 398)
         Me.PicturesDir.Name = "PicturesDir"
         Me.PicturesDir.Size = New System.Drawing.Size(405, 20)
         Me.PicturesDir.TabIndex = 11
@@ -150,7 +153,7 @@ Partial Class Home
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(13, 351)
+        Me.Label5.Location = New System.Drawing.Point(12, 376)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(130, 18)
         Me.Label5.TabIndex = 10
@@ -159,37 +162,41 @@ Partial Class Home
         'MusicCheckBox
         '
         Me.MusicCheckBox.AutoSize = True
-        Me.MusicCheckBox.Location = New System.Drawing.Point(426, 240)
+        Me.MusicCheckBox.Location = New System.Drawing.Point(425, 265)
         Me.MusicCheckBox.Name = "MusicCheckBox"
-        Me.MusicCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.MusicCheckBox.Size = New System.Drawing.Size(96, 17)
         Me.MusicCheckBox.TabIndex = 12
+        Me.MusicCheckBox.Text = "Synx my Music"
         Me.MusicCheckBox.UseVisualStyleBackColor = True
         '
         'VideosCheckBox
         '
         Me.VideosCheckBox.AutoSize = True
-        Me.VideosCheckBox.Location = New System.Drawing.Point(426, 286)
+        Me.VideosCheckBox.Location = New System.Drawing.Point(425, 311)
         Me.VideosCheckBox.Name = "VideosCheckBox"
-        Me.VideosCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.VideosCheckBox.Size = New System.Drawing.Size(100, 17)
         Me.VideosCheckBox.TabIndex = 13
+        Me.VideosCheckBox.Text = "Synx my Videos"
         Me.VideosCheckBox.UseVisualStyleBackColor = True
         '
         'MoviesCheckBox
         '
         Me.MoviesCheckBox.AutoSize = True
-        Me.MoviesCheckBox.Location = New System.Drawing.Point(426, 330)
+        Me.MoviesCheckBox.Location = New System.Drawing.Point(425, 355)
         Me.MoviesCheckBox.Name = "MoviesCheckBox"
-        Me.MoviesCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.MoviesCheckBox.Size = New System.Drawing.Size(102, 17)
         Me.MoviesCheckBox.TabIndex = 14
+        Me.MoviesCheckBox.Text = "Synx my Movies"
         Me.MoviesCheckBox.UseVisualStyleBackColor = True
         '
         'PicturesCheckBox
         '
         Me.PicturesCheckBox.AutoSize = True
-        Me.PicturesCheckBox.Location = New System.Drawing.Point(426, 376)
+        Me.PicturesCheckBox.Location = New System.Drawing.Point(425, 401)
         Me.PicturesCheckBox.Name = "PicturesCheckBox"
-        Me.PicturesCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.PicturesCheckBox.Size = New System.Drawing.Size(106, 17)
         Me.PicturesCheckBox.TabIndex = 15
+        Me.PicturesCheckBox.Text = "Synx my Pictures"
         Me.PicturesCheckBox.UseVisualStyleBackColor = True
         '
         'Button3
@@ -225,11 +232,42 @@ Partial Class Home
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(80, 17)
         Me.ToolStripStatusLabel1.Text = "Ready to Synx"
         '
+        'Button5
+        '
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(426, 121)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(124, 97)
+        Me.Button5.TabIndex = 19
+        Me.Button5.Text = "Follow us on Google+"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'ClassicSynxButton
+        '
+        Me.ClassicSynxButton.Location = New System.Drawing.Point(12, 215)
+        Me.ClassicSynxButton.Name = "ClassicSynxButton"
+        Me.ClassicSynxButton.Size = New System.Drawing.Size(75, 23)
+        Me.ClassicSynxButton.TabIndex = 20
+        Me.ClassicSynxButton.Text = "Classic Synx"
+        Me.ClassicSynxButton.UseVisualStyleBackColor = True
+        '
+        'D2PCSynxButton
+        '
+        Me.D2PCSynxButton.Location = New System.Drawing.Point(93, 215)
+        Me.D2PCSynxButton.Name = "D2PCSynxButton"
+        Me.D2PCSynxButton.Size = New System.Drawing.Size(101, 23)
+        Me.D2PCSynxButton.TabIndex = 21
+        Me.D2PCSynxButton.Text = "Device 2 PC Synx"
+        Me.D2PCSynxButton.UseVisualStyleBackColor = True
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(833, 521)
+        Me.Controls.Add(Me.D2PCSynxButton)
+        Me.Controls.Add(Me.ClassicSynxButton)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -248,7 +286,7 @@ Partial Class Home
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.MusicDir)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.SynxButton)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Home"
         Me.Text = "Synx"
@@ -258,7 +296,7 @@ Partial Class Home
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents SynxButton As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents MusicDir As System.Windows.Forms.TextBox
     Friend WithEvents VideosDir As System.Windows.Forms.TextBox
@@ -278,5 +316,8 @@ Partial Class Home
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents ClassicSynxButton As System.Windows.Forms.Button
+    Friend WithEvents D2PCSynxButton As System.Windows.Forms.Button
 
 End Class

@@ -1,10 +1,99 @@
-﻿Public Class Home
+﻿'File Created by Nick nick@etheralstudios.com
+'File has been edited by:
+'Nick nick@etheralstudios.com
+
+Imports System.IO
+
+Public Class Home
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         About.Show()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub SynxButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SynxButton.Click
+        If My.Computer.FileSystem.DirectoryExists(DevDrv.Text) Then
+            Me.ToolStripStatusLabel1.Text = "Synxing... (This may take some time)"
+            Dim DevDrvMusic As String
+            DevDrvMusic = DevDrv.Text + "\" + "Music"
+            Dim DevDrvVideos As String
+            DevDrvVideos = DevDrv.Text + "\" + "Videos"
+            Dim DevDrvMovies As String
+            DevDrvMovies = DevDrv.Text + "\" + "Movies"
+            Dim DevDrvPictures As String
+            DevDrvPictures = DevDrv.Text + "\" + "Pictures"
+            Dim DevDrvDCIM As String
+            DevDrvDCIM = DevDrv.Text + "\" + "DCIM" + "\" + "Camera"
+            Dim DCIMDir As String
+            DCIMDir = MoviesDir.Text + "\" + "Android"
+            If MusicCheckBox.Checked Then
+                If My.Computer.FileSystem.DirectoryExists(MusicDir.Text) Then
+                    If My.Computer.FileSystem.DirectoryExists(DevDrvMusic) Then
+                        My.Computer.FileSystem.CopyDirectory(DevDrvMusic, MusicDir.Text)
+                        My.Computer.FileSystem.CopyDirectory(MusicDir.Text, DevDrvMusic)
+                    Else
+                        My.Computer.FileSystem.CreateDirectory(DevDrvMusic)
+                    End If
+                Else
+                    MessageBox.Show("Sorry I can not find your music folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                End If
+            End If
+            If VideosCheckBox.Checked Then
+                If My.Computer.FileSystem.DirectoryExists(VideosDir.Text) Then
+                    If My.Computer.FileSystem.DirectoryExists(DevDrvVideos) Then
+                        If My.Computer.FileSystem.DirectoryExists(DevDrvDCIM) Then
+                            My.Computer.FileSystem.CopyDirectory(DevDrvDCIM, VideosDir.Text)
+                        End If
+                        My.Computer.FileSystem.CopyDirectory(DevDrvVideos, VideosDir.Text)
+                        My.Computer.FileSystem.CopyDirectory(VideosDir.Text, DevDrvVideos)
+                    Else
+                        My.Computer.FileSystem.CreateDirectory(DevDrvVideos)
+                    End If
+                Else
+                    MessageBox.Show("Sorry I can not find your videos folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                End If
+            End If
+            If MoviesCheckBox.Checked Then
+                If My.Computer.FileSystem.DirectoryExists(DevDrvMovies) Then
+                    My.Computer.FileSystem.CopyDirectory(DevDrvMovies, MoviesDir.Text)
+                    My.Computer.FileSystem.CopyDirectory(MoviesDir.Text, DevDrvMovies)
+                Else
+                    My.Computer.FileSystem.CreateDirectory(DevDrvMovies)
+                End If
+            Else
+                MessageBox.Show("Sorry I can not find your videos folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
+            If PicturesCheckBox.Checked Then
+                If My.Computer.FileSystem.DirectoryExists(DevDrvPictures) Then
+                    If My.Computer.FileSystem.DirectoryExists(DevDrvDCIM) Then
+                        My.Computer.FileSystem.CopyDirectory(DevDrvDCIM, PicturesDir.Text)
+                    End If
+                    My.Computer.FileSystem.CopyDirectory(DevDrvPictures, PicturesDir.Text)
+                    My.Computer.FileSystem.CopyDirectory(PicturesDir.Text, DevDrvPictures)
+                Else
+                    My.Computer.FileSystem.CreateDirectory(DevDrvPictures)
+                End If
+            Else
+                MessageBox.Show("Sorry I can not find your videos folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
+            Me.ToolStripStatusLabel1.Text = "Finished Synxing"
+        Else
+            MessageBox.Show("Sorry I can not find your phone, is USB Storage turned on?", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        IssueTracker.Show()
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        SubmitPatch.Show()
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        GooglePlus.Show()
+    End Sub
+
+    Private Sub ClassicSynxButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClassicSynxButton.Click
         If My.Computer.FileSystem.DirectoryExists(DevDrv.Text) Then
             If MusicCheckBox.Checked Then
                 If My.Computer.FileSystem.DirectoryExists(MusicDir.Text) Then
@@ -38,13 +127,5 @@
         Else
             MessageBox.Show("Sorry I can not find your phone, is USB Storage turned on?", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        IssueTracker.Show()
-    End Sub
-
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        SubmitPatch.Show()
     End Sub
 End Class
