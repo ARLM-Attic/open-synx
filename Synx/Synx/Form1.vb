@@ -3,6 +3,7 @@
 'Nick nick@etheralstudios.com
 
 Imports System.IO
+Imports System
 
 Public Class Home
 
@@ -12,7 +13,6 @@ Public Class Home
 
     Private Sub SynxButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SynxButton.Click
         If My.Computer.FileSystem.DirectoryExists(DevDrv.Text) Then
-            Me.ToolStripStatusLabel1.Text = "Synxing... (This may take some time)"
             Dim DevDrvMusic As String
             DevDrvMusic = DevDrv.Text + "\" + "Music"
             Dim DevDrvVideos As String
@@ -25,6 +25,7 @@ Public Class Home
             DevDrvDCIM = DevDrv.Text + "\" + "DCIM" + "\" + "Camera"
             Dim DCIMDir As String
             DCIMDir = MoviesDir.Text + "\" + "Android"
+
             If MusicCheckBox.Checked Then
                 If My.Computer.FileSystem.DirectoryExists(MusicDir.Text) Then
                     If My.Computer.FileSystem.DirectoryExists(DevDrvMusic) Then
@@ -60,7 +61,7 @@ Public Class Home
                     My.Computer.FileSystem.CreateDirectory(DevDrvMovies)
                 End If
             Else
-                MessageBox.Show("Sorry I can not find your videos folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Sorry I can not find your Movies folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
             If PicturesCheckBox.Checked Then
                 If My.Computer.FileSystem.DirectoryExists(DevDrvPictures) Then
@@ -73,9 +74,8 @@ Public Class Home
                     My.Computer.FileSystem.CreateDirectory(DevDrvPictures)
                 End If
             Else
-                MessageBox.Show("Sorry I can not find your videos folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Sorry I can not find your Pictures folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
-            Me.ToolStripStatusLabel1.Text = "Finished Synxing"
         Else
             MessageBox.Show("Sorry I can not find your phone, is USB Storage turned on?", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
@@ -123,9 +123,44 @@ Public Class Home
                     MessageBox.Show("Sorry I can not find your pictures folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 End If
             End If
-            Me.ToolStripStatusLabel1.Text = "Finished Synxing"
         Else
             MessageBox.Show("Sorry I can not find your phone, is USB Storage turned on?", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+    End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+        Dim SystemMusic As String
+        SystemMusic = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic)
+        Dim SystemVideos As String
+        SystemVideos = Environment.GetFolderPath(Environment.SpecialFolder.MyVideos)
+        Dim SystemPictures As String
+        SystemPictures = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures)
+
+        MusicDir.Text = SystemMusic
+        VideosDir.Text = SystemVideos
+        PicturesDir.Text = SystemPictures
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim iTunesMusic As String
+        iTunesMusic = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic) + "\iTunes\iTunes Media\Music"
+        Dim iTunesMovies As String
+        iTunesMovies = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic) + "\iTunes\iTunes Media\Movies"
+
+        MusicDir.Text = iTunesMusic
+        MoviesDir.Text = iTunesMovies
+    End Sub
+
+    Private Sub Home_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim SystemMusic As String
+        SystemMusic = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic)
+        Dim SystemVideos As String
+        SystemVideos = Environment.GetFolderPath(Environment.SpecialFolder.MyVideos)
+        Dim SystemPictures As String
+        SystemPictures = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures)
+
+        MusicDir.Text = SystemMusic
+        VideosDir.Text = SystemVideos
+        PicturesDir.Text = SystemPictures
     End Sub
 End Class
