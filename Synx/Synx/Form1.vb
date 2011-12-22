@@ -41,9 +41,6 @@ Public Class Home
             If VideosCheckBox.Checked Then
                 If My.Computer.FileSystem.DirectoryExists(VideosDir.Text) Then
                     If My.Computer.FileSystem.DirectoryExists(DevDrvVideos) Then
-                        If My.Computer.FileSystem.DirectoryExists(DevDrvDCIM) Then
-                            My.Computer.FileSystem.CopyDirectory(DevDrvDCIM, VideosDir.Text)
-                        End If
                         My.Computer.FileSystem.CopyDirectory(DevDrvVideos, VideosDir.Text)
                         My.Computer.FileSystem.CopyDirectory(VideosDir.Text, DevDrvVideos)
                     Else
@@ -65,9 +62,6 @@ Public Class Home
             End If
             If PicturesCheckBox.Checked Then
                 If My.Computer.FileSystem.DirectoryExists(DevDrvPictures) Then
-                    If My.Computer.FileSystem.DirectoryExists(DevDrvDCIM) Then
-                        My.Computer.FileSystem.CopyDirectory(DevDrvDCIM, PicturesDir.Text)
-                    End If
                     My.Computer.FileSystem.CopyDirectory(DevDrvPictures, PicturesDir.Text)
                     My.Computer.FileSystem.CopyDirectory(PicturesDir.Text, DevDrvPictures)
                 Else
@@ -75,6 +69,13 @@ Public Class Home
                 End If
             Else
                 MessageBox.Show("Sorry I can not find your Pictures folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            End If
+            If DCIMCheckBox.Checked Then
+                If My.Computer.FileSystem.DirectoryExists(PicturesDir.Text) Then
+                    If My.Computer.FileSystem.DirectoryExists(DevDrvDCIM) Then
+                        My.Computer.FileSystem.CopyDirectory(DevDrvDCIM, PicturesDir.Text)
+                    End If
+                End If
             End If
         Else
             MessageBox.Show("Sorry I can not find your phone, is USB Storage turned on?", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)

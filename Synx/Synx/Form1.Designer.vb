@@ -45,6 +45,8 @@ Partial Class Home
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.DCIMCheckBox = New System.Windows.Forms.CheckBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'SynxButton
@@ -252,11 +254,32 @@ Partial Class Home
         Me.Button6.Text = "Find Default Windows Content"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'DCIMCheckBox
+        '
+        Me.DCIMCheckBox.AutoSize = True
+        Me.DCIMCheckBox.Location = New System.Drawing.Point(118, 252)
+        Me.DCIMCheckBox.Name = "DCIMCheckBox"
+        Me.DCIMCheckBox.Size = New System.Drawing.Size(96, 17)
+        Me.DCIMCheckBox.TabIndex = 35
+        Me.DCIMCheckBox.Text = "Back up DCIM"
+        Me.DCIMCheckBox.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(3, 438)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(355, 13)
+        Me.Label6.TabIndex = 36
+        Me.Label6.Text = "When you Synx you may get an exeption, just click continue and ignore it."
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(620, 451)
+        Me.ClientSize = New System.Drawing.Size(620, 454)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.DCIMCheckBox)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PicturesCheckBox)
@@ -281,6 +304,7 @@ Partial Class Home
         Me.Controls.Add(Me.SynxButton)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Home"
         Me.Padding = New System.Windows.Forms.Padding(3)
         Me.Text = "Synx"
@@ -310,5 +334,7 @@ Partial Class Home
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents DCIMCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 
 End Class
