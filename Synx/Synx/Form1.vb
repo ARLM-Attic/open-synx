@@ -23,8 +23,6 @@ Public Class Home
             DevDrvPictures = DevDrv.Text + "\" + "Pictures"
             Dim DevDrvDCIM As String
             DevDrvDCIM = DevDrv.Text + "\" + "DCIM" + "\" + "Camera"
-            Dim DCIMDir As String
-            DCIMDir = MoviesDir.Text + "\" + "Android"
 
             If MusicCheckBox.Checked Then
                 If My.Computer.FileSystem.DirectoryExists(MusicDir.Text) Then
@@ -33,9 +31,11 @@ Public Class Home
                         My.Computer.FileSystem.CopyDirectory(MusicDir.Text, DevDrvMusic)
                     Else
                         My.Computer.FileSystem.CreateDirectory(DevDrvMusic)
+                        My.Computer.FileSystem.CopyDirectory(DevDrvPictures, PicturesDir.Text)
+                        My.Computer.FileSystem.CopyDirectory(PicturesDir.Text, DevDrvPictures)
                     End If
                 Else
-                    MessageBox.Show("Sorry I can not find your music folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    MessageBox.Show("Sorry I can not find your Music folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 End If
             End If
             If VideosCheckBox.Checked Then
@@ -45,30 +45,40 @@ Public Class Home
                         My.Computer.FileSystem.CopyDirectory(VideosDir.Text, DevDrvVideos)
                     Else
                         My.Computer.FileSystem.CreateDirectory(DevDrvVideos)
+                        My.Computer.FileSystem.CopyDirectory(DevDrvPictures, PicturesDir.Text)
+                        My.Computer.FileSystem.CopyDirectory(PicturesDir.Text, DevDrvPictures)
                     End If
                 Else
-                    MessageBox.Show("Sorry I can not find your videos folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    MessageBox.Show("Sorry I can not find your Videos folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 End If
             End If
             If MoviesCheckBox.Checked Then
-                If My.Computer.FileSystem.DirectoryExists(DevDrvMovies) Then
-                    My.Computer.FileSystem.CopyDirectory(DevDrvMovies, MoviesDir.Text)
-                    My.Computer.FileSystem.CopyDirectory(MoviesDir.Text, DevDrvMovies)
+                If My.Computer.FileSystem.DirectoryExists(MoviesDir.Text) Then
+                    If My.Computer.FileSystem.DirectoryExists(DevDrvMovies) Then
+                        My.Computer.FileSystem.CopyDirectory(DevDrvMovies, MoviesDir.Text)
+                        My.Computer.FileSystem.CopyDirectory(MoviesDir.Text, DevDrvMovies)
+                    Else
+                        My.Computer.FileSystem.CreateDirectory(DevDrvMovies)
+                        My.Computer.FileSystem.CopyDirectory(DevDrvMovies, MoviesDir.Text)
+                        My.Computer.FileSystem.CopyDirectory(MoviesDir.Text, DevDrvMovies)
+                    End If
                 Else
-                    My.Computer.FileSystem.CreateDirectory(DevDrvMovies)
+                    MessageBox.Show("Sorry I can not find your Movies folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 End If
-            Else
-                MessageBox.Show("Sorry I can not find your Movies folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
             If PicturesCheckBox.Checked Then
-                If My.Computer.FileSystem.DirectoryExists(DevDrvPictures) Then
-                    My.Computer.FileSystem.CopyDirectory(DevDrvPictures, PicturesDir.Text)
-                    My.Computer.FileSystem.CopyDirectory(PicturesDir.Text, DevDrvPictures)
+                If My.Computer.FileSystem.DirectoryExists(PicturesDir.Text) Then
+                    If My.Computer.FileSystem.DirectoryExists(DevDrvPictures) Then
+                        My.Computer.FileSystem.CopyDirectory(DevDrvPictures, PicturesDir.Text)
+                        My.Computer.FileSystem.CopyDirectory(PicturesDir.Text, DevDrvPictures)
+                    Else
+                        My.Computer.FileSystem.CreateDirectory(DevDrvPictures)
+                        My.Computer.FileSystem.CopyDirectory(DevDrvPictures, PicturesDir.Text)
+                        My.Computer.FileSystem.CopyDirectory(PicturesDir.Text, DevDrvPictures)
+                    End If
                 Else
-                    My.Computer.FileSystem.CreateDirectory(DevDrvPictures)
+                    MessageBox.Show("Sorry I can not find your Pictures folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 End If
-            Else
-                MessageBox.Show("Sorry I can not find your Pictures folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
             If DCIMCheckBox.Checked Then
                 If My.Computer.FileSystem.DirectoryExists(PicturesDir.Text) Then
