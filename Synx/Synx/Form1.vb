@@ -174,4 +174,12 @@ Public Class Home
         VideosDir.Text = SystemVideos
         PicturesDir.Text = SystemPictures
     End Sub
+
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+        Help.Show()
+    End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+        AirSynx.Show()
+    End Sub
 End Class

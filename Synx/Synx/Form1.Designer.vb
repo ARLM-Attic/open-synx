@@ -47,6 +47,8 @@ Partial Class Home
         Me.Button6 = New System.Windows.Forms.Button()
         Me.DCIMCheckBox = New System.Windows.Forms.CheckBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SynxButton
@@ -107,10 +109,10 @@ Partial Class Home
         '
         'Button5
         '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(6, 303)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(124, 97)
+        Me.Button5.Size = New System.Drawing.Size(113, 97)
         Me.Button5.TabIndex = 19
         Me.Button5.Text = "Follow us on Google+"
         Me.Button5.UseVisualStyleBackColor = True
@@ -273,11 +275,32 @@ Partial Class Home
         Me.Label6.TabIndex = 36
         Me.Label6.Text = "When you Synx you may get an exeption, just click continue and ignore it."
         '
+        'Button7
+        '
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(127, 303)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(190, 97)
+        Me.Button7.TabIndex = 37
+        Me.Button7.Text = "AirSynx"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(323, 303)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 38
+        Me.Button8.Text = "Help"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(620, 454)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.DCIMCheckBox)
         Me.Controls.Add(Me.Button6)
@@ -336,5 +359,7 @@ Partial Class Home
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents DCIMCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
 
 End Class
