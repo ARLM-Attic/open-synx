@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("The Open Etheral Group")> 
 <Assembly: AssemblyProduct("Synx")> 
-<Assembly: AssemblyCopyright("Copyright © The Open Etheral Group 2011")> 
+<Assembly: AssemblyCopyright("Copyright © The Open Etheral Group 2011-2012")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
