@@ -49,6 +49,9 @@ Partial Class Home
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.password = New System.Windows.Forms.TextBox()
+        Me.username = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'SynxButton
@@ -240,7 +243,7 @@ Partial Class Home
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(432, 103)
+        Me.Button1.Location = New System.Drawing.Point(432, 155)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(109, 23)
         Me.Button1.TabIndex = 33
@@ -249,7 +252,7 @@ Partial Class Home
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(432, 74)
+        Me.Button6.Location = New System.Drawing.Point(432, 126)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(160, 23)
         Me.Button6.TabIndex = 34
@@ -294,11 +297,40 @@ Partial Class Home
         Me.Button8.Text = "Help"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(513, 274)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(99, 23)
+        Me.Button9.TabIndex = 39
+        Me.Button9.Text = "Synx to AirSynx"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'password
+        '
+        Me.password.Location = New System.Drawing.Point(432, 100)
+        Me.password.Name = "password"
+        Me.password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.password.Size = New System.Drawing.Size(110, 20)
+        Me.password.TabIndex = 41
+        Me.password.Text = "Password"
+        '
+        'username
+        '
+        Me.username.Location = New System.Drawing.Point(432, 74)
+        Me.username.Name = "username"
+        Me.username.Size = New System.Drawing.Size(114, 20)
+        Me.username.TabIndex = 40
+        Me.username.Text = "AirSynx Username"
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(620, 454)
+        Me.Controls.Add(Me.password)
+        Me.Controls.Add(Me.username)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label6)
@@ -361,5 +393,8 @@ Partial Class Home
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents password As System.Windows.Forms.TextBox
+    Friend WithEvents username As System.Windows.Forms.TextBox
 
 End Class

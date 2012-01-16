@@ -182,4 +182,22 @@ Public Class Home
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
         AirSynx.Show()
     End Sub
+
+    Private Sub Button9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button9.Click
+        'This is just used for working with the AirSynx FTP Upload Tool.
+        If My.Computer.FileSystem.FileExists("C:\ProgramData\Synx\asxftpuV1.0.0.0\asxftpu.exe") Then
+            System.IO.File.WriteAllText("C:\ProgramData\Synx\asxun.dat", username.Text)
+            System.IO.File.WriteAllText("C:\ProgramData\Synx\asxpw.dat", password.Text)
+            Process.Start("C:\ProgramData\Synx\asxftpu.exe")
+        Else
+            MessageBox.Show("Starting Download...")
+            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpu.exe", "C:\ProgramData\Synx\asxftpuV1.0.0.0")
+            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpu.vshost.exe.manifest", "C:\ProgramData\Synx\asxftpuV1.0.0.0")
+            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpu.vshost.exe", "C:\ProgramData\Synx\asxftpuV1.0.0.0")
+            MessageBox.Show("Done!")
+            System.IO.File.WriteAllText("C:\ProgramData\Synx\asxun.dat", username.Text)
+            System.IO.File.WriteAllText("C:\ProgramData\Synx\asxpw.dat", password.Text)
+            Process.Start("C:\ProgramData\Synx\asxftpu.exe")
+        End If
+    End Sub
 End Class
