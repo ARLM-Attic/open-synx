@@ -57,7 +57,7 @@ Partial Class Home
         'SynxButton
         '
         Me.SynxButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SynxButton.Location = New System.Drawing.Point(432, 303)
+        Me.SynxButton.Location = New System.Drawing.Point(445, 324)
         Me.SynxButton.Name = "SynxButton"
         Me.SynxButton.Size = New System.Drawing.Size(180, 147)
         Me.SynxButton.TabIndex = 0
@@ -66,7 +66,7 @@ Partial Class Home
         '
         'DevDrv
         '
-        Me.DevDrv.Location = New System.Drawing.Point(432, 48)
+        Me.DevDrv.Location = New System.Drawing.Point(445, 50)
         Me.DevDrv.MaxLength = 13
         Me.DevDrv.Name = "DevDrv"
         Me.DevDrv.Size = New System.Drawing.Size(160, 20)
@@ -77,7 +77,7 @@ Partial Class Home
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(429, 27)
+        Me.Label4.Location = New System.Drawing.Point(442, 29)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(145, 18)
         Me.Label4.TabIndex = 7
@@ -85,7 +85,7 @@ Partial Class Home
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(323, 274)
+        Me.Button2.Location = New System.Drawing.Point(323, 309)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
@@ -94,7 +94,7 @@ Partial Class Home
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(6, 274)
+        Me.Button3.Location = New System.Drawing.Point(6, 308)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(115, 23)
         Me.Button3.TabIndex = 16
@@ -103,7 +103,7 @@ Partial Class Home
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(127, 274)
+        Me.Button4.Location = New System.Drawing.Point(125, 309)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(190, 23)
         Me.Button4.TabIndex = 17
@@ -113,7 +113,7 @@ Partial Class Home
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(6, 303)
+        Me.Button5.Location = New System.Drawing.Point(6, 337)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(113, 97)
         Me.Button5.TabIndex = 19
@@ -122,7 +122,7 @@ Partial Class Home
         '
         'ClassicSynxButton
         '
-        Me.ClassicSynxButton.Location = New System.Drawing.Point(432, 274)
+        Me.ClassicSynxButton.Location = New System.Drawing.Point(445, 295)
         Me.ClassicSynxButton.Name = "ClassicSynxButton"
         Me.ClassicSynxButton.Size = New System.Drawing.Size(75, 23)
         Me.ClassicSynxButton.TabIndex = 20
@@ -243,7 +243,7 @@ Partial Class Home
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(432, 155)
+        Me.Button1.Location = New System.Drawing.Point(445, 157)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(109, 23)
         Me.Button1.TabIndex = 33
@@ -252,7 +252,7 @@ Partial Class Home
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(432, 126)
+        Me.Button6.Location = New System.Drawing.Point(445, 128)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(160, 23)
         Me.Button6.TabIndex = 34
@@ -272,7 +272,7 @@ Partial Class Home
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(3, 438)
+        Me.Label6.Location = New System.Drawing.Point(3, 461)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(355, 13)
         Me.Label6.TabIndex = 36
@@ -281,7 +281,7 @@ Partial Class Home
         'Button7
         '
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(127, 303)
+        Me.Button7.Location = New System.Drawing.Point(125, 338)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(190, 97)
         Me.Button7.TabIndex = 37
@@ -290,7 +290,7 @@ Partial Class Home
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(323, 303)
+        Me.Button8.Location = New System.Drawing.Point(323, 337)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 38
@@ -299,7 +299,7 @@ Partial Class Home
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(513, 274)
+        Me.Button9.Location = New System.Drawing.Point(526, 295)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(99, 23)
         Me.Button9.TabIndex = 39
@@ -308,7 +308,7 @@ Partial Class Home
         '
         'password
         '
-        Me.password.Location = New System.Drawing.Point(432, 100)
+        Me.password.Location = New System.Drawing.Point(445, 102)
         Me.password.Name = "password"
         Me.password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.password.Size = New System.Drawing.Size(110, 20)
@@ -317,7 +317,7 @@ Partial Class Home
         '
         'username
         '
-        Me.username.Location = New System.Drawing.Point(432, 74)
+        Me.username.Location = New System.Drawing.Point(445, 76)
         Me.username.Name = "username"
         Me.username.Size = New System.Drawing.Size(114, 20)
         Me.username.TabIndex = 40
@@ -327,7 +327,8 @@ Partial Class Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(620, 454)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(631, 477)
         Me.Controls.Add(Me.password)
         Me.Controls.Add(Me.username)
         Me.Controls.Add(Me.Button9)
