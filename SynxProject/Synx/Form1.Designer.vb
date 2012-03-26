@@ -26,28 +26,33 @@ Partial Class Home
         Me.SynxButton = New System.Windows.Forms.Button()
         Me.DevDrv = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.AboutButton = New System.Windows.Forms.Button()
+        Me.IdeaButton = New System.Windows.Forms.Button()
+        Me.PatchButton = New System.Windows.Forms.Button()
+        Me.FollowButton = New System.Windows.Forms.Button()
         Me.PicturesCheckBox = New System.Windows.Forms.CheckBox()
         Me.MoviesCheckBox = New System.Windows.Forms.CheckBox()
         Me.VideosCheckBox = New System.Windows.Forms.CheckBox()
         Me.MusicCheckBox = New System.Windows.Forms.CheckBox()
         Me.PicturesDir = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PicturesLabel = New System.Windows.Forms.Label()
         Me.MoviesDir = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.MoviesLabel = New System.Windows.Forms.Label()
         Me.VideosDir = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.VideosLabel = New System.Windows.Forms.Label()
         Me.MusicDir = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.MusicLabel = New System.Windows.Forms.Label()
+        Me.iTunesContentButton = New System.Windows.Forms.Button()
+        Me.WindowsContentButton = New System.Windows.Forms.Button()
         Me.DCIMCheckBox = New System.Windows.Forms.CheckBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.exeptionLabel = New System.Windows.Forms.Label()
         Me.AirSynxButton = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.HelpSiteButton = New System.Windows.Forms.Button()
+        Me.MusicBrowse = New System.Windows.Forms.Button()
+        Me.VideosBrowse = New System.Windows.Forms.Button()
+        Me.MoviesBrowse = New System.Windows.Forms.Button()
+        Me.PicturesBrowse = New System.Windows.Forms.Button()
+        Me.DevDrvBrowse = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SynxButton
@@ -65,9 +70,9 @@ Partial Class Home
         Me.DevDrv.Location = New System.Drawing.Point(445, 50)
         Me.DevDrv.MaxLength = 13
         Me.DevDrv.Name = "DevDrv"
-        Me.DevDrv.Size = New System.Drawing.Size(160, 20)
+        Me.DevDrv.Size = New System.Drawing.Size(82, 20)
         Me.DevDrv.TabIndex = 8
-        Me.DevDrv.Text = "e.g. E:\"
+        Me.DevDrv.Text = "E:\"
         '
         'Label4
         '
@@ -79,42 +84,42 @@ Partial Class Home
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Android Device Drive"
         '
-        'Button2
+        'AboutButton
         '
-        Me.Button2.Location = New System.Drawing.Point(321, 310)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "About Synx"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.AboutButton.Location = New System.Drawing.Point(321, 310)
+        Me.AboutButton.Name = "AboutButton"
+        Me.AboutButton.Size = New System.Drawing.Size(75, 23)
+        Me.AboutButton.TabIndex = 9
+        Me.AboutButton.Text = "About Synx"
+        Me.AboutButton.UseVisualStyleBackColor = True
         '
-        'Button3
+        'IdeaButton
         '
-        Me.Button3.Location = New System.Drawing.Point(6, 310)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 23)
-        Me.Button3.TabIndex = 16
-        Me.Button3.Text = "Submit an Idea/Bug!"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.IdeaButton.Location = New System.Drawing.Point(6, 310)
+        Me.IdeaButton.Name = "IdeaButton"
+        Me.IdeaButton.Size = New System.Drawing.Size(113, 23)
+        Me.IdeaButton.TabIndex = 16
+        Me.IdeaButton.Text = "Submit an Idea/Bug!"
+        Me.IdeaButton.UseVisualStyleBackColor = True
         '
-        'Button4
+        'PatchButton
         '
-        Me.Button4.Location = New System.Drawing.Point(125, 310)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(190, 23)
-        Me.Button4.TabIndex = 17
-        Me.Button4.Text = "Upload a patch to make Synx better!"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.PatchButton.Location = New System.Drawing.Point(125, 310)
+        Me.PatchButton.Name = "PatchButton"
+        Me.PatchButton.Size = New System.Drawing.Size(190, 23)
+        Me.PatchButton.TabIndex = 17
+        Me.PatchButton.Text = "Upload a patch to make Synx better!"
+        Me.PatchButton.UseVisualStyleBackColor = True
         '
-        'Button5
+        'FollowButton
         '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(6, 339)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(113, 95)
-        Me.Button5.TabIndex = 19
-        Me.Button5.Text = "Follow us on Google+"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.FollowButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FollowButton.Location = New System.Drawing.Point(6, 339)
+        Me.FollowButton.Name = "FollowButton"
+        Me.FollowButton.Size = New System.Drawing.Size(113, 95)
+        Me.FollowButton.TabIndex = 19
+        Me.FollowButton.Text = "Follow us on Google+"
+        Me.FollowButton.UseVisualStyleBackColor = True
         '
         'PicturesCheckBox
         '
@@ -160,91 +165,91 @@ Partial Class Home
         '
         Me.PicturesDir.Location = New System.Drawing.Point(6, 226)
         Me.PicturesDir.Name = "PicturesDir"
-        Me.PicturesDir.Size = New System.Drawing.Size(405, 20)
+        Me.PicturesDir.Size = New System.Drawing.Size(325, 20)
         Me.PicturesDir.TabIndex = 28
         Me.PicturesDir.Text = "e.g. C:\Users\Example\Pictures"
         '
-        'Label5
+        'PicturesLabel
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(3, 205)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(130, 18)
-        Me.Label5.TabIndex = 27
-        Me.Label5.Text = "Pictures Directory:"
+        Me.PicturesLabel.AutoSize = True
+        Me.PicturesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PicturesLabel.Location = New System.Drawing.Point(3, 205)
+        Me.PicturesLabel.Name = "PicturesLabel"
+        Me.PicturesLabel.Size = New System.Drawing.Size(130, 18)
+        Me.PicturesLabel.TabIndex = 27
+        Me.PicturesLabel.Text = "Pictures Directory:"
         '
         'MoviesDir
         '
         Me.MoviesDir.Location = New System.Drawing.Point(6, 159)
         Me.MoviesDir.Name = "MoviesDir"
-        Me.MoviesDir.Size = New System.Drawing.Size(405, 20)
+        Me.MoviesDir.Size = New System.Drawing.Size(325, 20)
         Me.MoviesDir.TabIndex = 26
         Me.MoviesDir.Text = "e.g. C:\Users\Example\Videos\Movies"
         '
-        'Label3
+        'MoviesLabel
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(3, 138)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(124, 18)
-        Me.Label3.TabIndex = 25
-        Me.Label3.Text = "Movies Directory:"
+        Me.MoviesLabel.AutoSize = True
+        Me.MoviesLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MoviesLabel.Location = New System.Drawing.Point(3, 138)
+        Me.MoviesLabel.Name = "MoviesLabel"
+        Me.MoviesLabel.Size = New System.Drawing.Size(124, 18)
+        Me.MoviesLabel.TabIndex = 25
+        Me.MoviesLabel.Text = "Movies Directory:"
         '
         'VideosDir
         '
         Me.VideosDir.Location = New System.Drawing.Point(6, 92)
         Me.VideosDir.Name = "VideosDir"
-        Me.VideosDir.Size = New System.Drawing.Size(405, 20)
+        Me.VideosDir.Size = New System.Drawing.Size(325, 20)
         Me.VideosDir.TabIndex = 24
         Me.VideosDir.Text = "e.g. C:\Users\Example\Videos"
         '
-        'Label2
+        'VideosLabel
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(3, 71)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(121, 18)
-        Me.Label2.TabIndex = 23
-        Me.Label2.Text = "Videos Directory:"
+        Me.VideosLabel.AutoSize = True
+        Me.VideosLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VideosLabel.Location = New System.Drawing.Point(3, 71)
+        Me.VideosLabel.Name = "VideosLabel"
+        Me.VideosLabel.Size = New System.Drawing.Size(121, 18)
+        Me.VideosLabel.TabIndex = 23
+        Me.VideosLabel.Text = "Videos Directory:"
         '
         'MusicDir
         '
         Me.MusicDir.Location = New System.Drawing.Point(6, 25)
         Me.MusicDir.Name = "MusicDir"
-        Me.MusicDir.Size = New System.Drawing.Size(405, 20)
+        Me.MusicDir.Size = New System.Drawing.Size(325, 20)
         Me.MusicDir.TabIndex = 22
         Me.MusicDir.Text = "e.g. C:\Users\Example\Music"
         '
-        'Label1
+        'MusicLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(3, 3)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(116, 18)
-        Me.Label1.TabIndex = 21
-        Me.Label1.Text = "Music Directory:"
+        Me.MusicLabel.AutoSize = True
+        Me.MusicLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MusicLabel.Location = New System.Drawing.Point(3, 3)
+        Me.MusicLabel.Name = "MusicLabel"
+        Me.MusicLabel.Size = New System.Drawing.Size(116, 18)
+        Me.MusicLabel.TabIndex = 21
+        Me.MusicLabel.Text = "Music Directory:"
         '
-        'Button1
+        'iTunesContentButton
         '
-        Me.Button1.Location = New System.Drawing.Point(445, 105)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(109, 23)
-        Me.Button1.TabIndex = 33
-        Me.Button1.Text = "Find iTunes content"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.iTunesContentButton.Location = New System.Drawing.Point(445, 105)
+        Me.iTunesContentButton.Name = "iTunesContentButton"
+        Me.iTunesContentButton.Size = New System.Drawing.Size(109, 23)
+        Me.iTunesContentButton.TabIndex = 33
+        Me.iTunesContentButton.Text = "Find iTunes content"
+        Me.iTunesContentButton.UseVisualStyleBackColor = True
         '
-        'Button6
+        'WindowsContentButton
         '
-        Me.Button6.Location = New System.Drawing.Point(445, 76)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(160, 23)
-        Me.Button6.TabIndex = 34
-        Me.Button6.Text = "Find Default Windows Content"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.WindowsContentButton.Location = New System.Drawing.Point(445, 76)
+        Me.WindowsContentButton.Name = "WindowsContentButton"
+        Me.WindowsContentButton.Size = New System.Drawing.Size(160, 23)
+        Me.WindowsContentButton.TabIndex = 34
+        Me.WindowsContentButton.Text = "Find Default Windows Content"
+        Me.WindowsContentButton.UseVisualStyleBackColor = True
         '
         'DCIMCheckBox
         '
@@ -256,14 +261,14 @@ Partial Class Home
         Me.DCIMCheckBox.Text = "Back up Recorded Pictures and Videos"
         Me.DCIMCheckBox.UseVisualStyleBackColor = True
         '
-        'Label6
+        'exeptionLabel
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(3, 461)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(355, 13)
-        Me.Label6.TabIndex = 36
-        Me.Label6.Text = "When you Synx you may get an exeption, just click continue and ignore it."
+        Me.exeptionLabel.AutoSize = True
+        Me.exeptionLabel.Location = New System.Drawing.Point(3, 461)
+        Me.exeptionLabel.Name = "exeptionLabel"
+        Me.exeptionLabel.Size = New System.Drawing.Size(355, 13)
+        Me.exeptionLabel.TabIndex = 36
+        Me.exeptionLabel.Text = "When you Synx you may get an exeption, just click continue and ignore it."
         '
         'AirSynxButton
         '
@@ -275,14 +280,64 @@ Partial Class Home
         Me.AirSynxButton.Text = "AirSynx"
         Me.AirSynxButton.UseVisualStyleBackColor = True
         '
-        'Button8
+        'HelpSiteButton
         '
-        Me.Button8.Location = New System.Drawing.Point(321, 339)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 38
-        Me.Button8.Text = "Help"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.HelpSiteButton.Location = New System.Drawing.Point(321, 339)
+        Me.HelpSiteButton.Name = "HelpSiteButton"
+        Me.HelpSiteButton.Size = New System.Drawing.Size(75, 23)
+        Me.HelpSiteButton.TabIndex = 38
+        Me.HelpSiteButton.Text = "Help"
+        Me.HelpSiteButton.UseVisualStyleBackColor = True
+        '
+        'MusicBrowse
+        '
+        Me.MusicBrowse.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar
+        Me.MusicBrowse.Location = New System.Drawing.Point(336, 23)
+        Me.MusicBrowse.Name = "MusicBrowse"
+        Me.MusicBrowse.Size = New System.Drawing.Size(75, 23)
+        Me.MusicBrowse.TabIndex = 40
+        Me.MusicBrowse.Text = "Browse..."
+        Me.MusicBrowse.UseVisualStyleBackColor = True
+        '
+        'VideosBrowse
+        '
+        Me.VideosBrowse.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar
+        Me.VideosBrowse.Location = New System.Drawing.Point(336, 91)
+        Me.VideosBrowse.Name = "VideosBrowse"
+        Me.VideosBrowse.Size = New System.Drawing.Size(75, 23)
+        Me.VideosBrowse.TabIndex = 41
+        Me.VideosBrowse.Text = "Browse..."
+        Me.VideosBrowse.UseVisualStyleBackColor = True
+        '
+        'MoviesBrowse
+        '
+        Me.MoviesBrowse.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar
+        Me.MoviesBrowse.Location = New System.Drawing.Point(336, 157)
+        Me.MoviesBrowse.Name = "MoviesBrowse"
+        Me.MoviesBrowse.Size = New System.Drawing.Size(75, 23)
+        Me.MoviesBrowse.TabIndex = 42
+        Me.MoviesBrowse.Text = "Browse..."
+        Me.MoviesBrowse.UseVisualStyleBackColor = True
+        '
+        'PicturesBrowse
+        '
+        Me.PicturesBrowse.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar
+        Me.PicturesBrowse.Location = New System.Drawing.Point(336, 225)
+        Me.PicturesBrowse.Name = "PicturesBrowse"
+        Me.PicturesBrowse.Size = New System.Drawing.Size(75, 23)
+        Me.PicturesBrowse.TabIndex = 43
+        Me.PicturesBrowse.Text = "Browse..."
+        Me.PicturesBrowse.UseVisualStyleBackColor = True
+        '
+        'DevDrvBrowse
+        '
+        Me.DevDrvBrowse.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar
+        Me.DevDrvBrowse.Location = New System.Drawing.Point(532, 48)
+        Me.DevDrvBrowse.Name = "DevDrvBrowse"
+        Me.DevDrvBrowse.Size = New System.Drawing.Size(75, 23)
+        Me.DevDrvBrowse.TabIndex = 44
+        Me.DevDrvBrowse.Text = "Browse..."
+        Me.DevDrvBrowse.UseVisualStyleBackColor = True
         '
         'Home
         '
@@ -290,28 +345,33 @@ Partial Class Home
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(631, 477)
-        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.DevDrvBrowse)
+        Me.Controls.Add(Me.PicturesBrowse)
+        Me.Controls.Add(Me.MoviesBrowse)
+        Me.Controls.Add(Me.VideosBrowse)
+        Me.Controls.Add(Me.MusicBrowse)
+        Me.Controls.Add(Me.HelpSiteButton)
         Me.Controls.Add(Me.AirSynxButton)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.exeptionLabel)
         Me.Controls.Add(Me.DCIMCheckBox)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.WindowsContentButton)
+        Me.Controls.Add(Me.iTunesContentButton)
         Me.Controls.Add(Me.PicturesCheckBox)
         Me.Controls.Add(Me.MoviesCheckBox)
         Me.Controls.Add(Me.VideosCheckBox)
         Me.Controls.Add(Me.MusicCheckBox)
         Me.Controls.Add(Me.PicturesDir)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.PicturesLabel)
         Me.Controls.Add(Me.MoviesDir)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.MoviesLabel)
         Me.Controls.Add(Me.VideosDir)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.VideosLabel)
         Me.Controls.Add(Me.MusicDir)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.MusicLabel)
+        Me.Controls.Add(Me.FollowButton)
+        Me.Controls.Add(Me.PatchButton)
+        Me.Controls.Add(Me.IdeaButton)
+        Me.Controls.Add(Me.AboutButton)
         Me.Controls.Add(Me.DevDrv)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.SynxButton)
@@ -328,27 +388,32 @@ Partial Class Home
     Friend WithEvents SynxButton As System.Windows.Forms.Button
     Friend WithEvents DevDrv As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents AboutButton As System.Windows.Forms.Button
+    Friend WithEvents IdeaButton As System.Windows.Forms.Button
+    Friend WithEvents PatchButton As System.Windows.Forms.Button
+    Friend WithEvents FollowButton As System.Windows.Forms.Button
     Friend WithEvents PicturesCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents MoviesCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents VideosCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents MusicCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents PicturesDir As System.Windows.Forms.TextBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents PicturesLabel As System.Windows.Forms.Label
     Friend WithEvents MoviesDir As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents MoviesLabel As System.Windows.Forms.Label
     Friend WithEvents VideosDir As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents VideosLabel As System.Windows.Forms.Label
     Friend WithEvents MusicDir As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents MusicLabel As System.Windows.Forms.Label
+    Friend WithEvents iTunesContentButton As System.Windows.Forms.Button
+    Friend WithEvents WindowsContentButton As System.Windows.Forms.Button
     Friend WithEvents DCIMCheckBox As System.Windows.Forms.CheckBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents exeptionLabel As System.Windows.Forms.Label
     Friend WithEvents AirSynxButton As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents HelpSiteButton As System.Windows.Forms.Button
+    Friend WithEvents MusicBrowse As System.Windows.Forms.Button
+    Friend WithEvents VideosBrowse As System.Windows.Forms.Button
+    Friend WithEvents MoviesBrowse As System.Windows.Forms.Button
+    Friend WithEvents PicturesBrowse As System.Windows.Forms.Button
+    Friend WithEvents DevDrvBrowse As System.Windows.Forms.Button
 
 End Class
