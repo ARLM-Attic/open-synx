@@ -54,6 +54,7 @@ Partial Class Home
         Me.ASXRButton = New System.Windows.Forms.RadioButton()
         Me.ASXUsername = New System.Windows.Forms.TextBox()
         Me.ASXPassword = New System.Windows.Forms.TextBox()
+        Me.ASXFirstCheckBox = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'SynxButton
@@ -69,7 +70,7 @@ Partial Class Home
         'DevDrv
         '
         Me.DevDrv.Location = New System.Drawing.Point(437, 52)
-        Me.DevDrv.MaxLength = 13
+        Me.DevDrv.MaxLength = 50
         Me.DevDrv.Name = "DevDrv"
         Me.DevDrv.Size = New System.Drawing.Size(82, 20)
         Me.DevDrv.TabIndex = 8
@@ -352,12 +353,23 @@ Partial Class Home
         Me.ASXPassword.TabIndex = 48
         Me.ASXPassword.Text = "AirSynx Password"
         '
+        'ASXFirstCheckBox
+        '
+        Me.ASXFirstCheckBox.AutoSize = True
+        Me.ASXFirstCheckBox.Location = New System.Drawing.Point(437, 160)
+        Me.ASXFirstCheckBox.Name = "ASXFirstCheckBox"
+        Me.ASXFirstCheckBox.Size = New System.Drawing.Size(161, 17)
+        Me.ASXFirstCheckBox.TabIndex = 49
+        Me.ASXFirstCheckBox.Text = "This is my first time logging in"
+        Me.ASXFirstCheckBox.UseVisualStyleBackColor = True
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(641, 442)
+        Me.Controls.Add(Me.ASXFirstCheckBox)
         Me.Controls.Add(Me.ASXPassword)
         Me.Controls.Add(Me.ASXUsername)
         Me.Controls.Add(Me.ASXRButton)
@@ -430,5 +442,6 @@ Partial Class Home
     Friend WithEvents ASXRButton As System.Windows.Forms.RadioButton
     Friend WithEvents ASXUsername As System.Windows.Forms.TextBox
     Friend WithEvents ASXPassword As System.Windows.Forms.TextBox
+    Friend WithEvents ASXFirstCheckBox As System.Windows.Forms.CheckBox
 
 End Class
