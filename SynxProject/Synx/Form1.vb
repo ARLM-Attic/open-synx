@@ -20,6 +20,10 @@ Public Class Home
     Private Sub SynxButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SynxButton.Click
         'SYNX OVER ASXFTPU
         If ASXRButton.Checked Then
+            If My.Computer.FileSystem.DirectoryExists("C:\ProgramData\Synx\asxftpudata") Then
+            Else
+                My.Computer.FileSystem.CreateDirectory("C:\ProgramData\Synx\asxftpudata")
+            End If
 
             If ASXFirstCheckBox.Checked Then
                 'TODO: Set up the file system for the AirSynx account and do all the work accountcreater.php does not do
@@ -37,7 +41,8 @@ Public Class Home
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.dll")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.dll")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.vshost.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.vshost.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.vshost.exe")
@@ -57,13 +62,14 @@ Public Class Home
                         Process.Start("C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.exe")
                     Else
                         My.Computer.FileSystem.CreateDirectory("C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.dll")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.vshost.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.vshost.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.vshost.exe")
                         System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxun.dat", ASXUsername.Text)
                         System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxpw.dat", ASXPassword.Text)
                         System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxputdirv.dat", VideosDir.Text)
@@ -79,13 +85,14 @@ Public Class Home
                             Process.Start("C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
                         Else
                             My.Computer.FileSystem.CreateDirectory("C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
-                            My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.dll")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.vshost.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.vshost.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.vshost.exe")
                             System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxun.dat", ASXUsername.Text)
                             System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxpw.dat", ASXPassword.Text)
                             System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxputdirp.dat", PicturesDir.Text)
@@ -192,7 +199,7 @@ Public Class Home
                 Else
                     MessageBox.Show("Sorry I can not find your phone, is USB Storage turned on?", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
-            End If
+        End If
     End Sub
 
     Private Sub IdeaButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles IdeaButton.Click
@@ -240,46 +247,15 @@ Public Class Home
         MusicDir.Text = SystemMusic
         VideosDir.Text = SystemVideos
         PicturesDir.Text = SystemPictures
+
+        If My.Computer.FileSystem.DirectoryExists("C:\ProgramData\Synx") Then
+        Else
+            My.Computer.FileSystem.CreateDirectory("C:\ProgramData\Synx")
+        End If
     End Sub
 
     Private Sub HelpSiteButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HelpSiteButton.Click
         Help.Show()
-    End Sub
-
-    Private Sub AirSynxButton_Click(sender As System.Object, e As System.EventArgs)
-
-        If MusicCheckBox.Checked Then
-            If My.Computer.FileSystem.DirectoryExists(MusicDir.Text) Then
-                Process.Start("explorer.exe", MusicDir.Text)
-                Process.Start("explorer.exe", "ftp://ftp.etheralstudios.com/Music")
-                Me.WindowState = FormWindowState.Minimized
-
-            Else
-                MessageBox.Show("Sorry I can not find your Music folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            End If
-        End If
-
-        If PicturesCheckBox.Checked Then
-            If My.Computer.FileSystem.DirectoryExists(PicturesDir.Text) Then
-                Process.Start("explorer.exe", PicturesDir.Text)
-                Process.Start("explorer.exe", "ftp://ftp.etheralstudios.com/Pictures")
-                Me.WindowState = FormWindowState.Minimized
-
-            Else
-                MessageBox.Show("Sorry I can not find your Pictures folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            End If
-        End If
-
-        If VideosCheckBox.Checked Then
-            If My.Computer.FileSystem.DirectoryExists(VideosDir.Text) Then
-                Process.Start("explorer.exe", VideosDir.Text)
-                Process.Start("explorer.exe", "ftp://ftp.etheralstudios.com/Videos")
-                Me.WindowState = FormWindowState.Minimized
-
-            Else
-                MessageBox.Show("Sorry I can not find your Videos folder, does it exist?", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            End If
-        End If
     End Sub
 
     Private Sub MusicBrowse_Click(sender As System.Object, e As System.EventArgs) Handles MusicBrowse.Click
