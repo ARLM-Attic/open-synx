@@ -55,6 +55,7 @@ Partial Class Home
         Me.ASXUsername = New System.Windows.Forms.TextBox()
         Me.ASXPassword = New System.Windows.Forms.TextBox()
         Me.ASXFirstCheckBox = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SynxButton
@@ -78,7 +79,7 @@ Partial Class Home
         '
         'AboutButton
         '
-        Me.AboutButton.Location = New System.Drawing.Point(321, 293)
+        Me.AboutButton.Location = New System.Drawing.Point(240, 351)
         Me.AboutButton.Name = "AboutButton"
         Me.AboutButton.Size = New System.Drawing.Size(75, 23)
         Me.AboutButton.TabIndex = 9
@@ -255,7 +256,7 @@ Partial Class Home
         '
         'HelpSiteButton
         '
-        Me.HelpSiteButton.Location = New System.Drawing.Point(125, 322)
+        Me.HelpSiteButton.Location = New System.Drawing.Point(240, 322)
         Me.HelpSiteButton.Name = "HelpSiteButton"
         Me.HelpSiteButton.Size = New System.Drawing.Size(75, 23)
         Me.HelpSiteButton.TabIndex = 38
@@ -363,12 +364,23 @@ Partial Class Home
         Me.ASXFirstCheckBox.Text = "This is my first time logging in"
         Me.ASXFirstCheckBox.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(125, 322)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(113, 95)
+        Me.Button1.TabIndex = 50
+        Me.Button1.Text = "Like us on Facebook"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(641, 442)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ASXFirstCheckBox)
         Me.Controls.Add(Me.ASXPassword)
         Me.Controls.Add(Me.ASXUsername)
@@ -443,5 +455,6 @@ Partial Class Home
     Friend WithEvents ASXUsername As System.Windows.Forms.TextBox
     Friend WithEvents ASXPassword As System.Windows.Forms.TextBox
     Friend WithEvents ASXFirstCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class

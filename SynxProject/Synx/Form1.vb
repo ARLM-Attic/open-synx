@@ -10,8 +10,11 @@
 
 Imports System.IO
 Imports System
+Imports RegawMOD.Android
 
 Public Class Home
+    Dim android As AndroidController
+    Dim device As Device
 
     Private Sub AboutButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutButton.Click
         About.Show()
@@ -301,5 +304,9 @@ Public Class Home
         If DeviceBrowser.ShowDialog = Windows.Forms.DialogResult.OK Then
             Me.DevDrv.Text = DeviceBrowser.SelectedPath
         End If
+    End Sub
+
+    Private Sub Home_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
+
     End Sub
 End Class
