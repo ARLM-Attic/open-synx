@@ -81,19 +81,25 @@
     <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>B0E7DBA8A6A551AE55F23C5E20DF8D003444125A</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>73CE51FAA20797C4BC6EF22EDB3F1F580DC55DF6</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Synx_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>Synx Key.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Synx Key.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AndroidLib">
@@ -122,6 +128,12 @@
       <DependentUpon>About.vb</DependentUpon>
     </Compile>
     <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facebook.Designer.vb">
+      <DependentUpon>Facebook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -175,6 +187,9 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Facebook.resx">
+      <DependentUpon>Facebook.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +223,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Synx Key.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />

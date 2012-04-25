@@ -13,8 +13,6 @@ Imports System
 Imports RegawMOD.Android
 
 Public Class Home
-    Dim android As AndroidController
-    Dim device As Device
 
     Private Sub AboutButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutButton.Click
         About.Show()
@@ -29,7 +27,25 @@ Public Class Home
             End If
 
             If ASXFirstCheckBox.Checked Then
-                'TODO: Set up the file system for the AirSynx account and do all the work accountcreater.php does not do
+                If My.Computer.FileSystem.DirectoryExists("C:\ProgramData\Synx\asxftpuV2.0.0.0") Then
+                    System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxun.dat", ASXUsername.Text)
+                    System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxpw.dat", ASXPassword.Text)
+                    Process.Start("C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpu_accsetup.exe")
+                Else
+                    My.Computer.FileSystem.CreateDirectory("C:\ProgramData\Synx\asxftpuV2.0.0.0")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpu_accsetup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpu_accsetup.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.dll")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.vshost.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.vshost.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.vshost.exe")
+                    System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxun.dat", ASXUsername.Text)
+                    System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxpw.dat", ASXPassword.Text)
+                    Process.Start("C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpu_accsetup.exe")
+                End If
             End If
 
             MessageBox.Show("Synx is about to synx all your content with your AirSynx account.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -43,13 +59,13 @@ Public Class Home
                         My.Computer.FileSystem.CreateDirectory("C:\ProgramData\Synx\asxftpuV2.0.0.0")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.exe")
-                        My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpu_accsetup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpu_accsetup.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.dll")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.vshost.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.vshost.exe")
                         My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.vshost.exe")
-
                         System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxun.dat", ASXUsername.Text)
                         System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxpw.dat", ASXPassword.Text)
                         System.IO.File.WriteAllText("C:\ProgramData\Synx\asxftpudata\asxputdirm.dat", MusicDir.Text)
@@ -68,6 +84,7 @@ Public Class Home
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpu_accsetup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpu_accsetup.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.dll")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.vshost.exe")
@@ -91,6 +108,7 @@ Public Class Home
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpuv.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpuv.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpup.exe")
+                    My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpu_accsetup.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpu_accsetup.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.dll", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.dll")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/WinSCP.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\WinSCP.exe")
                     My.Computer.Network.DownloadFile("http://content.etheralstudios.com/AirSynx/asxftpum.vshost.exe", "C:\ProgramData\Synx\asxftpuV2.0.0.0\asxftpum.vshost.exe")
@@ -306,7 +324,11 @@ Public Class Home
         End If
     End Sub
 
-    Private Sub Home_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
+    Private Sub LikeButton_Click(sender As System.Object, e As System.EventArgs) Handles LikeButton.Click
+        Facebook.Show()
+    End Sub
 
+    Private Sub ASXSignup_Click(sender As System.Object, e As System.EventArgs) Handles ASXSignup.Click
+        'TODO: OPEN ASXSIGNUP.VB
     End Sub
 End Class

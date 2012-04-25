@@ -55,6 +55,8 @@ Partial Class Home
         Me.ASXUsername = New System.Windows.Forms.TextBox()
         Me.ASXPassword = New System.Windows.Forms.TextBox()
         Me.ASXFirstCheckBox = New System.Windows.Forms.CheckBox()
+        Me.LikeButton = New System.Windows.Forms.Button()
+        Me.ASXSignup = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -70,10 +72,10 @@ Partial Class Home
         '
         'DevDrv
         '
-        Me.DevDrv.Location = New System.Drawing.Point(437, 52)
+        Me.DevDrv.Location = New System.Drawing.Point(437, 29)
         Me.DevDrv.MaxLength = 50
         Me.DevDrv.Name = "DevDrv"
-        Me.DevDrv.Size = New System.Drawing.Size(82, 20)
+        Me.DevDrv.Size = New System.Drawing.Size(98, 20)
         Me.DevDrv.TabIndex = 8
         Me.DevDrv.Text = "E:\"
         '
@@ -106,7 +108,7 @@ Partial Class Home
         '
         'FollowButton
         '
-        Me.FollowButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FollowButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FollowButton.Location = New System.Drawing.Point(6, 322)
         Me.FollowButton.Name = "FollowButton"
         Me.FollowButton.Size = New System.Drawing.Size(113, 95)
@@ -228,7 +230,7 @@ Partial Class Home
         '
         'iTunesContentButton
         '
-        Me.iTunesContentButton.Location = New System.Drawing.Point(437, 252)
+        Me.iTunesContentButton.Location = New System.Drawing.Point(437, 85)
         Me.iTunesContentButton.Name = "iTunesContentButton"
         Me.iTunesContentButton.Size = New System.Drawing.Size(109, 23)
         Me.iTunesContentButton.TabIndex = 33
@@ -237,7 +239,7 @@ Partial Class Home
         '
         'WindowsContentButton
         '
-        Me.WindowsContentButton.Location = New System.Drawing.Point(437, 223)
+        Me.WindowsContentButton.Location = New System.Drawing.Point(437, 56)
         Me.WindowsContentButton.Name = "WindowsContentButton"
         Me.WindowsContentButton.Size = New System.Drawing.Size(160, 23)
         Me.WindowsContentButton.TabIndex = 34
@@ -306,7 +308,7 @@ Partial Class Home
         'DevDrvBrowse
         '
         Me.DevDrvBrowse.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar
-        Me.DevDrvBrowse.Location = New System.Drawing.Point(525, 50)
+        Me.DevDrvBrowse.Location = New System.Drawing.Point(541, 27)
         Me.DevDrvBrowse.Name = "DevDrvBrowse"
         Me.DevDrvBrowse.Size = New System.Drawing.Size(75, 23)
         Me.DevDrvBrowse.TabIndex = 44
@@ -318,7 +320,7 @@ Partial Class Home
         Me.DevDrvRButton.AutoSize = True
         Me.DevDrvRButton.Checked = True
         Me.DevDrvRButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DevDrvRButton.Location = New System.Drawing.Point(437, 24)
+        Me.DevDrvRButton.Location = New System.Drawing.Point(437, 3)
         Me.DevDrvRButton.Name = "DevDrvRButton"
         Me.DevDrvRButton.Size = New System.Drawing.Size(179, 22)
         Me.DevDrvRButton.TabIndex = 45
@@ -330,7 +332,7 @@ Partial Class Home
         '
         Me.ASXRButton.AutoSize = True
         Me.ASXRButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ASXRButton.Location = New System.Drawing.Point(437, 80)
+        Me.ASXRButton.Location = New System.Drawing.Point(437, 114)
         Me.ASXRButton.Name = "ASXRButton"
         Me.ASXRButton.Size = New System.Drawing.Size(132, 22)
         Me.ASXRButton.TabIndex = 46
@@ -339,7 +341,7 @@ Partial Class Home
         '
         'ASXUsername
         '
-        Me.ASXUsername.Location = New System.Drawing.Point(437, 108)
+        Me.ASXUsername.Location = New System.Drawing.Point(437, 142)
         Me.ASXUsername.Name = "ASXUsername"
         Me.ASXUsername.Size = New System.Drawing.Size(179, 20)
         Me.ASXUsername.TabIndex = 47
@@ -347,7 +349,7 @@ Partial Class Home
         '
         'ASXPassword
         '
-        Me.ASXPassword.Location = New System.Drawing.Point(437, 134)
+        Me.ASXPassword.Location = New System.Drawing.Point(437, 168)
         Me.ASXPassword.Name = "ASXPassword"
         Me.ASXPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.ASXPassword.Size = New System.Drawing.Size(179, 20)
@@ -357,21 +359,39 @@ Partial Class Home
         'ASXFirstCheckBox
         '
         Me.ASXFirstCheckBox.AutoSize = True
-        Me.ASXFirstCheckBox.Location = New System.Drawing.Point(437, 160)
+        Me.ASXFirstCheckBox.Location = New System.Drawing.Point(437, 194)
         Me.ASXFirstCheckBox.Name = "ASXFirstCheckBox"
         Me.ASXFirstCheckBox.Size = New System.Drawing.Size(161, 17)
         Me.ASXFirstCheckBox.TabIndex = 49
         Me.ASXFirstCheckBox.Text = "This is my first time logging in"
         Me.ASXFirstCheckBox.UseVisualStyleBackColor = True
         '
+        'LikeButton
+        '
+        Me.LikeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LikeButton.Location = New System.Drawing.Point(125, 322)
+        Me.LikeButton.Name = "LikeButton"
+        Me.LikeButton.Size = New System.Drawing.Size(113, 95)
+        Me.LikeButton.TabIndex = 50
+        Me.LikeButton.Text = "Like us on Facebook"
+        Me.LikeButton.UseVisualStyleBackColor = True
+        '
+        'ASXSignup
+        '
+        Me.ASXSignup.Location = New System.Drawing.Point(437, 217)
+        Me.ASXSignup.Name = "ASXSignup"
+        Me.ASXSignup.Size = New System.Drawing.Size(109, 23)
+        Me.ASXSignup.TabIndex = 51
+        Me.ASXSignup.Text = "Sign Up for AirSynx"
+        Me.ASXSignup.UseVisualStyleBackColor = True
+        '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(125, 322)
+        Me.Button1.Location = New System.Drawing.Point(437, 247)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(113, 95)
-        Me.Button1.TabIndex = 50
-        Me.Button1.Text = "Like us on Facebook"
+        Me.Button1.Size = New System.Drawing.Size(160, 23)
+        Me.Button1.TabIndex = 52
+        Me.Button1.Text = "Upgrade my AirSynx account"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Home
@@ -381,6 +401,8 @@ Partial Class Home
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(641, 442)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ASXSignup)
+        Me.Controls.Add(Me.LikeButton)
         Me.Controls.Add(Me.ASXFirstCheckBox)
         Me.Controls.Add(Me.ASXPassword)
         Me.Controls.Add(Me.ASXUsername)
@@ -455,6 +477,8 @@ Partial Class Home
     Friend WithEvents ASXUsername As System.Windows.Forms.TextBox
     Friend WithEvents ASXPassword As System.Windows.Forms.TextBox
     Friend WithEvents ASXFirstCheckBox As System.Windows.Forms.CheckBox
+    Friend WithEvents LikeButton As System.Windows.Forms.Button
+    Friend WithEvents ASXSignup As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
