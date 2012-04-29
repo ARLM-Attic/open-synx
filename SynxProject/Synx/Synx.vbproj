@@ -130,6 +130,12 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="asxsignup.Designer.vb">
+      <DependentUpon>asxsignup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="asxsignup.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Facebook.Designer.vb">
       <DependentUpon>Facebook.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,12 @@
     <Compile Include="GooglePlus.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="App.Designer.vb">
+      <DependentUpon>App.vb</DependentUpon>
+    </Compile>
+    <Compile Include="App.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -187,6 +199,9 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="asxsignup.resx">
+      <DependentUpon>asxsignup.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Facebook.resx">
       <DependentUpon>Facebook.vb</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GooglePlus.resx">
       <DependentUpon>GooglePlus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App.resx">
+      <DependentUpon>App.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

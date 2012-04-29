@@ -54,9 +54,8 @@ Partial Class Home
         Me.ASXRButton = New System.Windows.Forms.RadioButton()
         Me.ASXUsername = New System.Windows.Forms.TextBox()
         Me.ASXPassword = New System.Windows.Forms.TextBox()
-        Me.ASXFirstCheckBox = New System.Windows.Forms.CheckBox()
         Me.LikeButton = New System.Windows.Forms.Button()
-        Me.ASXSignup = New System.Windows.Forms.Button()
+        Me.ASXSignupButton = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -356,16 +355,6 @@ Partial Class Home
         Me.ASXPassword.TabIndex = 48
         Me.ASXPassword.Text = "AirSynx Password"
         '
-        'ASXFirstCheckBox
-        '
-        Me.ASXFirstCheckBox.AutoSize = True
-        Me.ASXFirstCheckBox.Location = New System.Drawing.Point(437, 194)
-        Me.ASXFirstCheckBox.Name = "ASXFirstCheckBox"
-        Me.ASXFirstCheckBox.Size = New System.Drawing.Size(161, 17)
-        Me.ASXFirstCheckBox.TabIndex = 49
-        Me.ASXFirstCheckBox.Text = "This is my first time logging in"
-        Me.ASXFirstCheckBox.UseVisualStyleBackColor = True
-        '
         'LikeButton
         '
         Me.LikeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -376,22 +365,22 @@ Partial Class Home
         Me.LikeButton.Text = "Like us on Facebook"
         Me.LikeButton.UseVisualStyleBackColor = True
         '
-        'ASXSignup
+        'ASXSignupButton
         '
-        Me.ASXSignup.Location = New System.Drawing.Point(437, 217)
-        Me.ASXSignup.Name = "ASXSignup"
-        Me.ASXSignup.Size = New System.Drawing.Size(109, 23)
-        Me.ASXSignup.TabIndex = 51
-        Me.ASXSignup.Text = "Sign Up for AirSynx"
-        Me.ASXSignup.UseVisualStyleBackColor = True
+        Me.ASXSignupButton.Location = New System.Drawing.Point(437, 194)
+        Me.ASXSignupButton.Name = "ASXSignupButton"
+        Me.ASXSignupButton.Size = New System.Drawing.Size(109, 23)
+        Me.ASXSignupButton.TabIndex = 51
+        Me.ASXSignupButton.Text = "Sign up for AirSynx"
+        Me.ASXSignupButton.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(437, 247)
+        Me.Button1.Location = New System.Drawing.Point(437, 223)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 23)
+        Me.Button1.Size = New System.Drawing.Size(109, 23)
         Me.Button1.TabIndex = 52
-        Me.Button1.Text = "Upgrade my AirSynx account"
+        Me.Button1.Text = "Get the AirSynx app"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Home
@@ -401,9 +390,8 @@ Partial Class Home
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(641, 442)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ASXSignup)
+        Me.Controls.Add(Me.ASXSignupButton)
         Me.Controls.Add(Me.LikeButton)
-        Me.Controls.Add(Me.ASXFirstCheckBox)
         Me.Controls.Add(Me.ASXPassword)
         Me.Controls.Add(Me.ASXUsername)
         Me.Controls.Add(Me.ASXRButton)
@@ -476,9 +464,8 @@ Partial Class Home
     Friend WithEvents ASXRButton As System.Windows.Forms.RadioButton
     Friend WithEvents ASXUsername As System.Windows.Forms.TextBox
     Friend WithEvents ASXPassword As System.Windows.Forms.TextBox
-    Friend WithEvents ASXFirstCheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents LikeButton As System.Windows.Forms.Button
-    Friend WithEvents ASXSignup As System.Windows.Forms.Button
+    Friend WithEvents ASXSignupButton As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
