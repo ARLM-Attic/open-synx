@@ -78,7 +78,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationIcon>Synx.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>73CE51FAA20797C4BC6EF22EDB3F1F580DC55DF6</ManifestCertificateThumbprint>
@@ -244,6 +244,7 @@
     <None Include="Synx Key.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Synx.ico" />
     <Content Include="icon.ico" />
     <Content Include="Lines!.png" />
   </ItemGroup>

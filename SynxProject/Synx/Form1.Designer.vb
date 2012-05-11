@@ -57,6 +57,7 @@ Partial Class Home
         Me.LikeButton = New System.Windows.Forms.Button()
         Me.ASXSignupButton = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ASXkey = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'SynxButton
@@ -340,7 +341,7 @@ Partial Class Home
         '
         'ASXUsername
         '
-        Me.ASXUsername.Location = New System.Drawing.Point(437, 142)
+        Me.ASXUsername.Location = New System.Drawing.Point(437, 165)
         Me.ASXUsername.Name = "ASXUsername"
         Me.ASXUsername.Size = New System.Drawing.Size(179, 20)
         Me.ASXUsername.TabIndex = 47
@@ -348,7 +349,7 @@ Partial Class Home
         '
         'ASXPassword
         '
-        Me.ASXPassword.Location = New System.Drawing.Point(437, 168)
+        Me.ASXPassword.Location = New System.Drawing.Point(437, 191)
         Me.ASXPassword.Name = "ASXPassword"
         Me.ASXPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.ASXPassword.Size = New System.Drawing.Size(179, 20)
@@ -367,7 +368,7 @@ Partial Class Home
         '
         'ASXSignupButton
         '
-        Me.ASXSignupButton.Location = New System.Drawing.Point(437, 194)
+        Me.ASXSignupButton.Location = New System.Drawing.Point(437, 217)
         Me.ASXSignupButton.Name = "ASXSignupButton"
         Me.ASXSignupButton.Size = New System.Drawing.Size(109, 23)
         Me.ASXSignupButton.TabIndex = 51
@@ -376,12 +377,20 @@ Partial Class Home
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(437, 223)
+        Me.Button1.Location = New System.Drawing.Point(437, 246)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(109, 23)
         Me.Button1.TabIndex = 52
         Me.Button1.Text = "Get the AirSynx app"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ASXkey
+        '
+        Me.ASXkey.Location = New System.Drawing.Point(437, 139)
+        Me.ASXkey.Name = "ASXkey"
+        Me.ASXkey.Size = New System.Drawing.Size(179, 20)
+        Me.ASXkey.TabIndex = 53
+        Me.ASXkey.Text = "Access Key"
         '
         'Home
         '
@@ -389,6 +398,7 @@ Partial Class Home
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(641, 442)
+        Me.Controls.Add(Me.ASXkey)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ASXSignupButton)
         Me.Controls.Add(Me.LikeButton)
@@ -467,5 +477,6 @@ Partial Class Home
     Friend WithEvents LikeButton As System.Windows.Forms.Button
     Friend WithEvents ASXSignupButton As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ASXkey As System.Windows.Forms.TextBox
 
 End Class
