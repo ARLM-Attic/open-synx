@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class asxsignup
+Partial Class Website
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -31,21 +31,20 @@ Partial Class asxsignup
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(605, 293)
+        Me.WebBrowser1.Size = New System.Drawing.Size(868, 585)
         Me.WebBrowser1.TabIndex = 0
-        Me.WebBrowser1.Url = New System.Uri("http://synx.etheralstudios.com/signup", System.UriKind.Absolute)
+        Me.WebBrowser1.Url = New System.Uri("http://synx.etheralstudios.com", System.UriKind.Absolute)
         '
-        'asxsignup
+        'Website
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(605, 293)
+        Me.ClientSize = New System.Drawing.Size(868, 585)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "asxsignup"
+        Me.Name = "Website"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
-        Me.Text = "Sign up for AirSynx"
+        Me.Text = "Website"
         Me.ResumeLayout(False)
 
     End Sub

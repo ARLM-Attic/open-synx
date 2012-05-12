@@ -58,6 +58,8 @@ Partial Class Home
         Me.ASXSignupButton = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ASXkey = New System.Windows.Forms.TextBox()
+        Me.keyhelpbutton = New System.Windows.Forms.Button()
+        Me.WebsiteButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SynxButton
@@ -65,7 +67,7 @@ Partial Class Home
         Me.SynxButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 38.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SynxButton.Location = New System.Drawing.Point(437, 293)
         Me.SynxButton.Name = "SynxButton"
-        Me.SynxButton.Size = New System.Drawing.Size(198, 143)
+        Me.SynxButton.Size = New System.Drawing.Size(207, 124)
         Me.SynxButton.TabIndex = 0
         Me.SynxButton.Text = "SYNX!"
         Me.SynxButton.UseVisualStyleBackColor = True
@@ -81,11 +83,11 @@ Partial Class Home
         '
         'AboutButton
         '
-        Me.AboutButton.Location = New System.Drawing.Point(240, 351)
+        Me.AboutButton.Location = New System.Drawing.Point(372, 293)
         Me.AboutButton.Name = "AboutButton"
-        Me.AboutButton.Size = New System.Drawing.Size(75, 23)
+        Me.AboutButton.Size = New System.Drawing.Size(49, 23)
         Me.AboutButton.TabIndex = 9
-        Me.AboutButton.Text = "About Synx"
+        Me.AboutButton.Text = "About"
         Me.AboutButton.UseVisualStyleBackColor = True
         '
         'IdeaButton
@@ -111,7 +113,7 @@ Partial Class Home
         Me.FollowButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FollowButton.Location = New System.Drawing.Point(6, 322)
         Me.FollowButton.Name = "FollowButton"
-        Me.FollowButton.Size = New System.Drawing.Size(113, 95)
+        Me.FollowButton.Size = New System.Drawing.Size(135, 95)
         Me.FollowButton.TabIndex = 19
         Me.FollowButton.Text = "Follow us on Google+"
         Me.FollowButton.UseVisualStyleBackColor = True
@@ -258,9 +260,9 @@ Partial Class Home
         '
         'HelpSiteButton
         '
-        Me.HelpSiteButton.Location = New System.Drawing.Point(240, 322)
+        Me.HelpSiteButton.Location = New System.Drawing.Point(321, 293)
         Me.HelpSiteButton.Name = "HelpSiteButton"
-        Me.HelpSiteButton.Size = New System.Drawing.Size(75, 23)
+        Me.HelpSiteButton.Size = New System.Drawing.Size(45, 23)
         Me.HelpSiteButton.TabIndex = 38
         Me.HelpSiteButton.Text = "Help"
         Me.HelpSiteButton.UseVisualStyleBackColor = True
@@ -359,9 +361,9 @@ Partial Class Home
         'LikeButton
         '
         Me.LikeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LikeButton.Location = New System.Drawing.Point(125, 322)
+        Me.LikeButton.Location = New System.Drawing.Point(147, 322)
         Me.LikeButton.Name = "LikeButton"
-        Me.LikeButton.Size = New System.Drawing.Size(113, 95)
+        Me.LikeButton.Size = New System.Drawing.Size(135, 95)
         Me.LikeButton.TabIndex = 50
         Me.LikeButton.Text = "Like us on Facebook"
         Me.LikeButton.UseVisualStyleBackColor = True
@@ -392,12 +394,33 @@ Partial Class Home
         Me.ASXkey.TabIndex = 53
         Me.ASXkey.Text = "Access Key"
         '
+        'keyhelpbutton
+        '
+        Me.keyhelpbutton.Location = New System.Drawing.Point(622, 138)
+        Me.keyhelpbutton.Name = "keyhelpbutton"
+        Me.keyhelpbutton.Size = New System.Drawing.Size(22, 21)
+        Me.keyhelpbutton.TabIndex = 54
+        Me.keyhelpbutton.Text = "?"
+        Me.keyhelpbutton.UseVisualStyleBackColor = True
+        '
+        'WebsiteButton
+        '
+        Me.WebsiteButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.WebsiteButton.Location = New System.Drawing.Point(288, 322)
+        Me.WebsiteButton.Name = "WebsiteButton"
+        Me.WebsiteButton.Size = New System.Drawing.Size(135, 95)
+        Me.WebsiteButton.TabIndex = 55
+        Me.WebsiteButton.Text = "Visit our Website"
+        Me.WebsiteButton.UseVisualStyleBackColor = True
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(641, 442)
+        Me.ClientSize = New System.Drawing.Size(647, 422)
+        Me.Controls.Add(Me.WebsiteButton)
+        Me.Controls.Add(Me.keyhelpbutton)
         Me.Controls.Add(Me.ASXkey)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ASXSignupButton)
@@ -478,5 +501,7 @@ Partial Class Home
     Friend WithEvents ASXSignupButton As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents ASXkey As System.Windows.Forms.TextBox
+    Friend WithEvents keyhelpbutton As System.Windows.Forms.Button
+    Friend WithEvents WebsiteButton As System.Windows.Forms.Button
 
 End Class

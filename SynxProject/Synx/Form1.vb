@@ -1,4 +1,5 @@
-﻿'File created by Nick nick@etheralstudios.com
+﻿'Copyright © Etheral Studios 2011-2012
+'File created by Nick nick@etheralstudios.com
 'File has been edited by:
 'Nick nick@etheralstudios.com
 'Rhys rhys@realmofconflict.com
@@ -313,5 +314,13 @@ Public Class Home
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         App.Show()
+    End Sub
+
+    Private Sub keyhelpbutton_Click(sender As System.Object, e As System.EventArgs) Handles keyhelpbutton.Click
+        MessageBox.Show("You can get the key for AirSynx off the AirSynx app.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub WebsiteButton_Click(sender As System.Object, e As System.EventArgs) Handles WebsiteButton.Click
+        Website.Show()
     End Sub
 End Class

@@ -194,6 +194,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Website.Designer.vb">
+      <DependentUpon>Website.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Website.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
@@ -228,6 +234,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Website.resx">
+      <DependentUpon>Website.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
