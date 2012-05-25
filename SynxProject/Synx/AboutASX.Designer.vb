@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class App
+Partial Class AboutASX
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -33,18 +33,18 @@ Partial Class App
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.Size = New System.Drawing.Size(868, 585)
         Me.WebBrowser1.TabIndex = 0
-        Me.WebBrowser1.Url = New System.Uri("https://play.google.com/store/apps/details?id=com.etheralstudios.synx.AirSynx", System.UriKind.Absolute)
+        Me.WebBrowser1.Url = New System.Uri("http://getairsynx.etheralstudios.com", System.UriKind.Absolute)
         '
-        'App
+        'AboutASX
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(868, 585)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.Name = "App"
+        Me.Name = "AboutASX"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
-        Me.Text = "Get the AirSynx app"
+        Me.Text = "About AirSynx"
         Me.ResumeLayout(False)
 
     End Sub

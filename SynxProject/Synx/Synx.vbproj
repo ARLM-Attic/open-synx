@@ -38,7 +38,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <ApplicationVersion>2.1.2.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -130,6 +130,12 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AboutASX.Designer.vb">
+      <DependentUpon>AboutASX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutASX.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="asxsignup.Designer.vb">
       <DependentUpon>asxsignup.vb</DependentUpon>
     </Compile>
@@ -205,6 +211,9 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AboutASX.resx">
+      <DependentUpon>AboutASX.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="asxsignup.resx">
       <DependentUpon>asxsignup.vb</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +262,7 @@
     <None Include="Synx Key.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\button.png" />
     <Content Include="Synx.ico" />
     <Content Include="icon.ico" />
     <Content Include="Lines!.png" />

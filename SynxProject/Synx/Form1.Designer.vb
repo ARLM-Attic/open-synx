@@ -60,17 +60,19 @@ Partial Class Home
         Me.ASXkey = New System.Windows.Forms.TextBox()
         Me.keyhelpbutton = New System.Windows.Forms.Button()
         Me.WebsiteButton = New System.Windows.Forms.Button()
+        Me.asxhelp = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SynxButton
         '
+        Me.SynxButton.BackgroundImage = Global.Synx.My.Resources.Resources.button
+        Me.SynxButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.SynxButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 38.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SynxButton.Location = New System.Drawing.Point(437, 293)
         Me.SynxButton.Name = "SynxButton"
         Me.SynxButton.Size = New System.Drawing.Size(207, 124)
         Me.SynxButton.TabIndex = 0
-        Me.SynxButton.Text = "SYNX!"
-        Me.SynxButton.UseVisualStyleBackColor = True
+        Me.SynxButton.UseVisualStyleBackColor = False
         '
         'DevDrv
         '
@@ -88,7 +90,7 @@ Partial Class Home
         Me.AboutButton.Size = New System.Drawing.Size(49, 23)
         Me.AboutButton.TabIndex = 9
         Me.AboutButton.Text = "About"
-        Me.AboutButton.UseVisualStyleBackColor = True
+        Me.AboutButton.UseVisualStyleBackColor = False
         '
         'IdeaButton
         '
@@ -97,7 +99,7 @@ Partial Class Home
         Me.IdeaButton.Size = New System.Drawing.Size(113, 23)
         Me.IdeaButton.TabIndex = 16
         Me.IdeaButton.Text = "Submit an Idea/Bug!"
-        Me.IdeaButton.UseVisualStyleBackColor = True
+        Me.IdeaButton.UseVisualStyleBackColor = False
         '
         'PatchButton
         '
@@ -106,7 +108,7 @@ Partial Class Home
         Me.PatchButton.Size = New System.Drawing.Size(190, 23)
         Me.PatchButton.TabIndex = 17
         Me.PatchButton.Text = "Upload a patch to make Synx better!"
-        Me.PatchButton.UseVisualStyleBackColor = True
+        Me.PatchButton.UseVisualStyleBackColor = False
         '
         'FollowButton
         '
@@ -116,7 +118,7 @@ Partial Class Home
         Me.FollowButton.Size = New System.Drawing.Size(135, 95)
         Me.FollowButton.TabIndex = 19
         Me.FollowButton.Text = "Follow us on Google+"
-        Me.FollowButton.UseVisualStyleBackColor = True
+        Me.FollowButton.UseVisualStyleBackColor = False
         '
         'PicturesCheckBox
         '
@@ -237,7 +239,7 @@ Partial Class Home
         Me.iTunesContentButton.Size = New System.Drawing.Size(109, 23)
         Me.iTunesContentButton.TabIndex = 33
         Me.iTunesContentButton.Text = "Find iTunes content"
-        Me.iTunesContentButton.UseVisualStyleBackColor = True
+        Me.iTunesContentButton.UseVisualStyleBackColor = False
         '
         'WindowsContentButton
         '
@@ -246,7 +248,7 @@ Partial Class Home
         Me.WindowsContentButton.Size = New System.Drawing.Size(160, 23)
         Me.WindowsContentButton.TabIndex = 34
         Me.WindowsContentButton.Text = "Find Default Windows Content"
-        Me.WindowsContentButton.UseVisualStyleBackColor = True
+        Me.WindowsContentButton.UseVisualStyleBackColor = False
         '
         'DCIMCheckBox
         '
@@ -265,7 +267,7 @@ Partial Class Home
         Me.HelpSiteButton.Size = New System.Drawing.Size(45, 23)
         Me.HelpSiteButton.TabIndex = 38
         Me.HelpSiteButton.Text = "Help"
-        Me.HelpSiteButton.UseVisualStyleBackColor = True
+        Me.HelpSiteButton.UseVisualStyleBackColor = False
         '
         'MusicBrowse
         '
@@ -275,7 +277,7 @@ Partial Class Home
         Me.MusicBrowse.Size = New System.Drawing.Size(75, 23)
         Me.MusicBrowse.TabIndex = 40
         Me.MusicBrowse.Text = "Browse..."
-        Me.MusicBrowse.UseVisualStyleBackColor = True
+        Me.MusicBrowse.UseVisualStyleBackColor = False
         '
         'VideosBrowse
         '
@@ -285,7 +287,7 @@ Partial Class Home
         Me.VideosBrowse.Size = New System.Drawing.Size(75, 23)
         Me.VideosBrowse.TabIndex = 41
         Me.VideosBrowse.Text = "Browse..."
-        Me.VideosBrowse.UseVisualStyleBackColor = True
+        Me.VideosBrowse.UseVisualStyleBackColor = False
         '
         'MoviesBrowse
         '
@@ -295,7 +297,7 @@ Partial Class Home
         Me.MoviesBrowse.Size = New System.Drawing.Size(75, 23)
         Me.MoviesBrowse.TabIndex = 42
         Me.MoviesBrowse.Text = "Browse..."
-        Me.MoviesBrowse.UseVisualStyleBackColor = True
+        Me.MoviesBrowse.UseVisualStyleBackColor = False
         '
         'PicturesBrowse
         '
@@ -305,7 +307,7 @@ Partial Class Home
         Me.PicturesBrowse.Size = New System.Drawing.Size(75, 23)
         Me.PicturesBrowse.TabIndex = 43
         Me.PicturesBrowse.Text = "Browse..."
-        Me.PicturesBrowse.UseVisualStyleBackColor = True
+        Me.PicturesBrowse.UseVisualStyleBackColor = False
         '
         'DevDrvBrowse
         '
@@ -315,7 +317,7 @@ Partial Class Home
         Me.DevDrvBrowse.Size = New System.Drawing.Size(75, 23)
         Me.DevDrvBrowse.TabIndex = 44
         Me.DevDrvBrowse.Text = "Browse..."
-        Me.DevDrvBrowse.UseVisualStyleBackColor = True
+        Me.DevDrvBrowse.UseVisualStyleBackColor = False
         '
         'DevDrvRButton
         '
@@ -366,7 +368,7 @@ Partial Class Home
         Me.LikeButton.Size = New System.Drawing.Size(135, 95)
         Me.LikeButton.TabIndex = 50
         Me.LikeButton.Text = "Like us on Facebook"
-        Me.LikeButton.UseVisualStyleBackColor = True
+        Me.LikeButton.UseVisualStyleBackColor = False
         '
         'ASXSignupButton
         '
@@ -375,7 +377,7 @@ Partial Class Home
         Me.ASXSignupButton.Size = New System.Drawing.Size(109, 23)
         Me.ASXSignupButton.TabIndex = 51
         Me.ASXSignupButton.Text = "Sign up for AirSynx"
-        Me.ASXSignupButton.UseVisualStyleBackColor = True
+        Me.ASXSignupButton.UseVisualStyleBackColor = False
         '
         'Button1
         '
@@ -384,7 +386,7 @@ Partial Class Home
         Me.Button1.Size = New System.Drawing.Size(109, 23)
         Me.Button1.TabIndex = 52
         Me.Button1.Text = "Get the AirSynx app"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'ASXkey
         '
@@ -401,7 +403,7 @@ Partial Class Home
         Me.keyhelpbutton.Size = New System.Drawing.Size(22, 21)
         Me.keyhelpbutton.TabIndex = 54
         Me.keyhelpbutton.Text = "?"
-        Me.keyhelpbutton.UseVisualStyleBackColor = True
+        Me.keyhelpbutton.UseVisualStyleBackColor = False
         '
         'WebsiteButton
         '
@@ -411,7 +413,16 @@ Partial Class Home
         Me.WebsiteButton.Size = New System.Drawing.Size(135, 95)
         Me.WebsiteButton.TabIndex = 55
         Me.WebsiteButton.Text = "Visit our Website"
-        Me.WebsiteButton.UseVisualStyleBackColor = True
+        Me.WebsiteButton.UseVisualStyleBackColor = False
+        '
+        'asxhelp
+        '
+        Me.asxhelp.Location = New System.Drawing.Point(564, 116)
+        Me.asxhelp.Name = "asxhelp"
+        Me.asxhelp.Size = New System.Drawing.Size(22, 21)
+        Me.asxhelp.TabIndex = 56
+        Me.asxhelp.Text = "?"
+        Me.asxhelp.UseVisualStyleBackColor = False
         '
         'Home
         '
@@ -419,6 +430,7 @@ Partial Class Home
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(647, 422)
+        Me.Controls.Add(Me.asxhelp)
         Me.Controls.Add(Me.WebsiteButton)
         Me.Controls.Add(Me.keyhelpbutton)
         Me.Controls.Add(Me.ASXkey)
@@ -503,5 +515,6 @@ Partial Class Home
     Friend WithEvents ASXkey As System.Windows.Forms.TextBox
     Friend WithEvents keyhelpbutton As System.Windows.Forms.Button
     Friend WithEvents WebsiteButton As System.Windows.Forms.Button
+    Friend WithEvents asxhelp As System.Windows.Forms.Button
 
 End Class
