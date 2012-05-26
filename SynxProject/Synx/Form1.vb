@@ -323,4 +323,8 @@ Public Class Home
     Private Sub WebsiteButton_Click(sender As System.Object, e As System.EventArgs) Handles WebsiteButton.Click
         Website.Show()
     End Sub
+
+    Private Sub asxhelp_Click(sender As System.Object, e As System.EventArgs) Handles asxhelp.Click
+        AboutASX.Show()
+    End Sub
 End Class
