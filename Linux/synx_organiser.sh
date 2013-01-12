@@ -1,10 +1,10 @@
 #!/bin/bash
 #Synx (c) Copyright Etheral Studios 2012
-#Synx Organiser v0.2.1
+#Synx Organiser v0.3
 
 clear
 echo "Synx Organiser (c) Copyright Etheral Studios 2012"
-echo "Synx Organiser v0.2.1 Beta - for more information go to http://opensynx.codeplex.com"
+echo "Synx Organiser v0.3 Beta - for more information go to http://opensynx.codeplex.com"
 echo ""
 
 cd /mnt/sdcard/
