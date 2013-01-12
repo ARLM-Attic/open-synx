@@ -60,7 +60,7 @@ case $music_checked in
       zenity --title="Synx v0.2.1 Beta" --info --text "Your Music is about to be synxed. You will get a notification once this has completed."
       ./adb pull /mnt/sdcard/Music/ $MusicDir/
       ./adb push $MusicDir/ /mnt/sdcard/Music/
-      notify-send Synx "Your music has been Synxed";;
+      zenity --title="Synx v0.2.1 Beta" --info --text "Your music has been synxed.";;
 esac
 
 case $pictures_checked in
@@ -79,7 +79,7 @@ case $pictures_checked in
       fi
 
       ./adb pull /mnt/sdcard/DCIM/ $PicturesDir/Phone\ Camera/
-      notify-send Synx "Your pictures have been Synxed";;
+      zenity --title="Synx v0.2.1 Beta" --info --text "Your pictures have been synxed.";;
 esac
 
 case $videos_checked in
@@ -92,7 +92,7 @@ case $videos_checked in
       zenity --title="Synx v0.2.1 Beta" --info --text "Your Videos are about to be synxed. You will get a notification once this has completed."
       ./adb pull /mnt/sdcard/Videos/ $VideosDir/
       ./adb push $VideosDir/ /mnt/sdcard/Videos/
-      notify-send Synx "Your videos have been Synxed";;
+      zenity --title="Synx v0.2.1 Beta" --info --text "Your videos have been synxed.";;
 esac
 
 case $movies_checked in
@@ -105,7 +105,7 @@ case $movies_checked in
       zenity --title="Synx v0.2.1 Beta" --info --text "Your Movies are about to be synxed. You will get a notification once this has completed."
       ./adb pull /mnt/sdcard/Movies/ $MoviesDir/
       ./adb push $MoviesDir/ /mnt/sdcard/Movies/
-      notify-send Synx "Your movies have been Synxed";;
+      zenity --title="Synx v0.2.1 Beta" --info --text "Your videos have been synxed.";;
 esac
 
 case $podcasts_checked in
@@ -118,5 +118,5 @@ case $podcasts_checked in
       zenity --title="Synx v0.2.1 Beta" --info --text "Your Podcasts are about to be synxed. You will get a notification once this has completed."
       ./adb pull /mnt/sdcard/Podcasts/ $PodcastsDir/
       ./adb push $PodcastsDir/ /mnt/sdcard/Podcasts/
-      notify-send Synx "Your podcasts have been Synxed";;
+      zenity --title="Synx v0.2.1 Beta" --info --text "Your podcasts have been synxed.";;
 esac
