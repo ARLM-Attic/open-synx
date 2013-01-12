@@ -4,7 +4,7 @@
 
 clear
 echo "Synx Organiser (c) Copyright Etheral Studios 2012"
-echo "Synx Organiser v0.2.1 Alpha - for more information go to http://opensynx.codeplex.com"
+echo "Synx Organiser v0.2.1 Beta - for more information go to http://opensynx.codeplex.com"
 echo ""
 
 cd /mnt/sdcard/
